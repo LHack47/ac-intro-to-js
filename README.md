@@ -1,36 +1,15 @@
-# ac-class-template
-Empty template for class slides
+# AnnieCannons Introduction to JavaScript
 
-### Setup
+Check out the slides for the Introduction to JavaScript.
 
-1. Install [Node.js](http://nodejs.org/)
+This includes exercises and slides on the following topics:
+1) What is JS?
+2) How to use JS
+3) Variables
+4) Data Types
+5) Conditional Statements
+6) Functions
 
-2. Install [Grunt](http://gruntjs.com/getting-started#installing-the-cli)
-
-4. Clone the ac-class-templates repository
-   ```sh
-   $ git clone https://github.com/Yonet/ac-class-template.git
-   ```
-
-5. Navigate to the ac-class-templates folder
-   ```sh
-   $ cd ac-class-templates
-   ```
-
-6. Install dependencies
-   ```sh
-   $ npm install
-   ```
-
-7. Serve the presentation and monitor source files for changes
-   ```sh
-   $ grunt serve
-   ```
-
-8. Open <http://localhost:8000> to view your presentation
-
-   You can change the port by using `grunt serve --port 8001`.
-  
   
   ### More info
   
