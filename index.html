@@ -44,58 +44,1170 @@
 
         <!--Introduction slide-->
         <section>
-            <h1>Class Name</h1>
-            <h3></h3>
-            <p>
-
-            </p>
+            <h1>Introduction to JavaScript</h1>
         </section>
         <!--/Intro Slides-->
 
         <section>
-            <h2></h2>
-            <pre><code class="hljs" data-trim contenteditable>
-
-            </code></pre>
-            <p>
-                <a href=""></a>
-            </p>
-            <aside class="notes"></aside>
+            <h2>JS Introduction</h2>
+            <p class="fragment"> JavaScript is a programming language that drives the web: from front-end user interface design, to backend server-side programming, you'll find JavaScript at every stage of a web site and web application.</p>
+            <p class="fragment">It is used on nearly every web site in the world.</p>
+            <p class="fragment">JavaScript drives the front end of giant web applications like Google Maps, Gmail, and Facebook.</p>
         </section>
 
-
-        <!--Slide with list temp-->
         <section>
-            <h2></h2>
+            <h2>What can JS do?</h2>
             <ul>
-                <li class="fragment"><a href="" target="_blank"></a></li>
-                <li class="fragment"></li>
-            </ul>
-            <p>
-                <a href=""></a>
-            </p>
-            <aside class="notes"></aside>
+                <li>Image switchers and lightboxes</li>
+                <li>Full featured web applications</li>
+                <li>Keep track of users with cookies </li>
+                <li>Interactive elements like tabs, sliders and accordions</li>
+                <li>Drawing and animation</li>
         </section>
 
-        <!--<section>-->
-            <!--<h2>Clever Quotes</h2>-->
-            <!--<p>-->
-                <!--These guys come in two forms, inline: <q-->
-                    <!--cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">-->
-                <!--&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:-->
-            <!--</p>-->
-            <!--<blockquote-->
-                    <!--cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">-->
-                <!--&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of-->
-                <!--typewriters would-->
-                <!--reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;-->
-            <!--</blockquote>-->
-        <!--</section>-->
+        <section>
+            <img src="images/jstips-header-blog.gif" alt="">
+        </section>
 
+        <section>
+            <h2>Full-Stack JS</h2>
+            <p>JavaScript isn't just limited to the web browser. It turns out that JavaScript can even be used on web servers.</p>
+            <p>Node.JS is a popular choice for server side development. It's a favorite of big companies like Wal-Mart, PayPal, LinkedIn, Netflix and Groupon.</p>
+        </section>
 
-        <!--You can link between slides internally,-->
-        <!--<a href="#/2/3">like this</a>.-->
+        <section>
+            <h2>Reminder! (on syntax)</h2>
+            <p class="fragment">JavaScript is a programming language and, like any language, it has its own vocabulary and grammar.</p>
+            <p class="fragment">Programmers call this <span style="color:yellow">syntax</span>.</p>
+            <p class="fragment">A programming language's syntax is the different commands, special words and punctuation you use to put together a program.</p>
+            <p class="fragment">Every programming language has its own syntax, just as English, Spanish and Mandarin each have their own vocabulary and grammar.</p>
+        </section>
 
+        <section>
+            <h2>REMINDER! (ON JAVA)</h2>
+            <p>Remember! ‘Java’ is not the same thing as ‘Javascript’. They are two different languages. We will be learning Javascript.</p>
+        </section>
+
+        <section>
+            <h2>Quick Review 1</h2>
+            <p style="color:yellow">You can use JavaScript on a server?</p>
+            <ul>
+                <li>True</li>
+                <li>False</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Quick Review 2</h2>
+            <p style="color:yellow">JavaScript lets you add interactive components to a site like photo galleries, tabbed panels, or form validation.</p>
+            <ul>
+                <li>True</li>
+                <li>False</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Quick Review 3</h2>
+            <p style="color:yellow">JavaScript is used to build complex web applications, like GMail, Google Docs, and Google Maps.</p>
+            <ul>
+                <li>True</li>
+                <li>False</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Quick Review 4</h2>
+            <p style="color:yellow">Javascript and Java are the same programming language.</p>
+            <ul>
+                <li>True</li>
+                <li>False</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Quick Review 5</h2>
+            <p style="color:yellow">What does "syntax" mean?</p>
+            <ol>
+                <li>Syntax is another programming languages that is becoming as popular as JavaScript.</li>
+                <li>Syntax is the vocabulary and grammar of a programming language. It’s a language’s words and commands as well as instructions for putting them together to create a program.</li>
+                <li>Syntax is a command in the JavaScript programming language.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Quick Review 6</h2>
+            <p style="color:yellow">What do JavaScript, HTML, and CSS have in common?</p>
+        </section>
+
+        <section>
+            <h2>Statements</h2>
+            <p>Each instruction in JS is a "statement", like:</p>
+            <pre>console.log('Hello World!');</pre>
+            <img src="images/consolelog.png" alt="">
+            <p class="fragment">Each separate instruction in Javascript is called a 'statement'. A 'simple' statement represents a single instruction and ends with a semi-colon. You can think of a simple statement like a sentence - the semi-colon is like a full stop and tells Javascript that your statement is finished.</p>
+        </section>
+
+        <section>
+            <h2>Javascript Console</h2>
+            <p class="fragment">This is located in the Developer Tools on Chrome.</p>
+            <p class="fragment">You can find errors in your JavaScript, find our what type of error it is, and determine which line of code the error is on.</p>
+            <p class="fragment">All browsers have a JavaScript interpreter.</p> 
+            <p class="fragment">One of the main ways to keep track of things happening in our programs is to use the following JavaScript statement</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>
+console.log();
+</code></pre>
+        </section>
+
+        <section>
+            <h2>Checking out the console in developer tools</h2>
+            <p class="fragment">You can do basic math and other functions in the console. </p>
+            <p class="fragment">For instance, type 2+2 and hit enter, the console should show you the number 4. </p>
+            <p class="fragment">Try it!</p>
+            <p class="fragment">A console is where you will check to make sure that your program is running the way you want it to.</p>
+        </section>
+
+        <section>
+            <h2>JS Statements</h2>
+            <p>Let’s practice writing a command in JavaScript </p>
+            <p>Open JSBin, and in the Javascript section, write </p>
+<pre><code class="js" data-trim contenteditable>
+alert();
+</code></pre>
+            <p class="fragment">Alert is a command that's built into the browser. It opens a dialogue box and displays a message.</p>
+            <p class="fragment">What we type in our code is called a JavaScript statement. You write programs by typing multiple statements. Just like you write a paragraph, by writing multiple sentences.</p>
+        </section>
+
+        <section>
+            <h2>Things to Remember</h2>
+            <ol>
+                <li>A program is a set of statements that run one after the other.</li>
+                <li>One statement needs to be complete before the next statement runs.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Variables</h2>
+             <p>Use variables to store values.</p>
+            <p>Declare, then initialize in 2 statements:</p>
+<pre><code class="js" data-trim contenteditable>
+var x;
+x = 5;
+console.log(x);
+</code></pre>
+            <p>Or declare and initialize in one statement:</p>
+<pre><code class="js" data-trim contenteditable>
+    var x;
+    x = 5;
+    var y = 2;
+    console.log(y);
+</code></pre>
+
+            <p>Re-assign the value later:</p>
+<pre><code class="js" data-trim contenteditable>
+    var x = 5;
+    x = 1;
+</code></pre>
+        </section>
+
+        <section>
+            <h2>Variables</h2>
+            <p class="fragment">Variables are one of the basic building blocks of Javascript. Just like 'x' in algebra, a variable in programming is a named container for a value that can change.</p>
+            <p class="fragment">Variables have to be <span style="color:yellow">'declared'</span> once before being used, using the <span style="color:yellow">'var'</span> keyword and the name of the variable. A variable declaration is a simple statement, so it ends with a semi-colon.</p>
+            <p class="fragment"> Assigning an initial value to a variable is called <span style="color:yellow">'initialising'</span>. You can declare and initialise in one go, or seperately.If its not assigned, it's undefined.</p>
+        </section>
+
+     <section>
+            <h2>Important Note!</h2>
+            <p class="fragment">Variable names can’t have spaces if they have multiple words in them. If they do have multiple word, you should use <span style="color:yellow">camel case</span>.</p>
+            <p class="fragment">Camel case means that if you have two words, the first word does not have a capital letter but the subsequent words do).</p>
+            <ul>
+                <li class="fragment">Example: myNumber</li>
+                <li class="fragment">Example: thisIsMyCoolVariableName</li>
+                <li class="fragment">Example: favoriteFood</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>More on Variable Names</h2>                                                     
+            <ul>
+                <li>Begin with letters, $ or _ </li>
+                <li>Only contain letters, numbers, $ and _ </li>
+                <li>Case sensitive</li>
+                <li>Always a space after 'var'</li>
+                <li>Avoid <a href="https://developer.mozilla.org/en/JavaScript/Reference/Reserved_Words">reserved words</a></li>
+                <li>Choose clarity and meaning</li>
+            </ul>
+            <br>
+            OK:
+<pre><code class="js" data-trim contenteditable>
+    var numPeople, $mainHeader, _num, _Num;
+</code></pre>
+            Not OK:
+<pre><code class="js" data-trim contenteditable>
+    var 2coolForSchool, soHappy!
+</code></pre>                                                                  
+        </section>
+
+        <section>
+            <h2>Alert Command Using Variables</h2>
+<pre><code class="js" data-trim contenteditable>            
+var message= “Hello!”;
+alert(message);
+message=“Hello! My name is Laura!”;
+alert(message);
+</code></pre>
+        </section>
+
+        <section>
+            <h2>Where does my JavaScript go?</h2>
+            <p>When you are working in a browser (not a server), it is similar to CSS!</p>
+            <p>You can link a JavaScript file to a web page using the <code>script </code> tag and the src property (this goes in your HTML document, head or body): </p>
+<pre><code class="html">              
+&lt;script src="scripts.js"&gt;&lt;/script&gt;
+</pre></code>
+        </section>
+        <section>
+            <h2>Where does my JavaScript go?</h2>
+            <p>Or you can insert JavaScript directly into a web page inside <code>script</code> tags in the head section of your HTML:</p>
+<pre><code class="html"> 
+&lt;script&gt;
+alert("Hello there.");
+&lt;/script&gt;
+</pre></code>
+            <p class="fragment">You can also add it right before the closing body tag. Any idea why?</p>
+        </section>
+
+        <section>
+            <h2>Data Types in JS</h2>
+            <p>Variables can be populated with any one of the 'data types' available in Javascript.</p>
+            <ul>
+                <li>strings</li>
+                <li>numbers</li>
+                <li>booleans</li>
+                <li>arrays</li>
+                <li>objects</li>
+            </ul>
+            <p>There are also data types that cater for situations where there is no value undefined and null. Loose typing- you don't tell JS what type of data type it is, it guesses. You can use <a href="http://www.daaq.net/old/javascript/index.php?page=js+data+types&parent=core+javascript">typeof</a> to see what it thinks.
+            </p>                                                       
+        </section>
+
+        <section>
+            <h2>Data Type 1: Strings</h2>
+            <p class="fragment">A string is something that would be in quotes. A string is how you would represent text, like “Beyonce”. Strings ALWAYS need to be surrounded by quotes.</p>
+            <p class="fragment">In your <a href="www.jsbin.org">JS bin</a>, enter 
+<pre class="fragment"><code class="js" data-trim contenteditable>
+console.log("Beyonce"); 
+ </code></pre>             
+             <p class="fragment">This will have your string logged into the console so that you can see it. Try it!</p>
+            <p class="fragment">With JS, semicolons are an important part of the language’s syntax. Just like < > are important for HTML. You should have a semicolon at the end of each statement (or the end of each line) in most of your JS.</p>
+        </section>
+
+        <section>
+            <h2>Data Type 1: Strings</h2>
+            <p> Say you want to save your name (and remember, your name is a string) because we want to use it in the program you are writing.</p>
+            <p>You can use the keyword var like this</p> 
+<pre><code class="js" data-trim contenteditable>
+var name = “Laura”;
+</code></pre>  
+            <p class="fragment">‘name’ will become a keyword in a program, and “Laura” is the value assigned to it.</p>          
+        </section>
+
+         <section>
+            <h2>Expressions</h2>
+            <p>Variables can also store the result of any "expression":</p>
+<pre><code class="js" data-trim contenteditable> 
+    var name = 'Claire';
+    var greeting = 'Hello ' + name;
+    var title = 'Baroness';
+    var formalGreeting = greeting + ', ' + title;
+</code></pre>
+        </section>
+
+        <section>
+            <h2>A new command</h2>
+            <p class="fragment">If you want to ask your user a question in a pop up window, you can use the prompt command. It is similar to alert.</p>
+            <p class="fragment">You use prompt and then generally follow that with a string.</p>
+<pre class="fragment"><code class="js" data-trim contenteditable> 
+prompt(“What is your favorite food?”);
+</code></pre>
+            <p class="fragment">Try making several prompts in JSBin</p>
+        </section>
+
+        <section>
+            <h2>Prompt command</h2>
+            <p>What is a way that we have learned to store the information for what the user types in?</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>            
+var name=prompt(“What is your name?”);
+console.log(name);
+</code></pre>
+        </section>
+
+        <section>
+            <h2>Another new command</h2>
+            <p class="fragment">document.write();</p>
+            <p class="fragment">This adds text directly to your browser (NOT the console).</p>
+            <p class="fragment">So, if you want to ask someone their name and then add it to your website, you can!</p>
+        </section>
+
+        <section>
+            <h2>Combining Strings</h2>
+            <p class="fragment">We added someone’s name to our website. What if we want to add other text to their name?</p>
+            <p class="fragment">We need to add the string (generally with a space) and the + sign </p>
+<pre class="fragment"><code class="js" data-trim contenteditable>            
+var name=prompt("What is your name?");
+document.write("Hello " + name);
+</code></pre>
+            <p class="fragment">The process of combining strings is called <span style="color:yellow">Concatenation</span>. In JS, you combine strings with a + operator like this: 'one string ' + ' another string'</p>
+        </section>
+
+        <section>
+            <h2>Make a Madlib</h2>
+            <p class="fragment">A madlib is a word game where one player prompts others for a list of words to substitute for blanks in a story, before reading the story aloud.</p>
+            <p class="fragment">Let’s create a madlib game for our users with the following sentence:</p>
+            <p class="fragment">“There once was a [adjective] programmer who wanted to use JavaScript to [verb] with the [noun]."</p>
+        </section>
+
+        <section>
+            <h2>The secret about adding strings</h2>
+            <p class="fragment">When you get information from your user from a prompt or even a web form, JavaScript stores the data as a string not a number.</p>
+            <p class="fragment">Try it out</p> 
+<pre class="fragment"><code class="js" data-trim contenteditable>            
+var peanut= prompt(“How many peanut butter sandwiches do you have?”)
+var ham= prompt(“How many ham sandwiches do you have?”)
+var totalSandwich = peanut + ham;
+console.log(totalSandwich);
+</code></pre>
+            <p class="fragment">What amount do you get?</p>
+        </section>
+
+        <section>
+            <h2>new command</h2>
+            <p>parseInt(); command allows you to pull the numbers you want out of the strings </p>
+<pre class="fragment"><code class="js" data-trim contenteditable>           
+var peanut= prompt(“How many peanut butter sandwiches do you have?”)
+var ham= prompt(“How many ham sandwiches do you have?”)
+var totalSandwich = peanut + ham;
+</code></pre>
+    <p class="fragment">How could we use this to get the right number of sandwiches? You need to change to:</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>           
+var totalSandwich = parseInt(peanut) + parseInt(ham);
+console.log(totalSandwich);
+</code></pre>
+        </section>
+
+        <section>
+            <h2>More string commands</h2>
+            <ul>
+                <li class="fragment">.length</li>
+                <li class="fragment">.toUpperCase()</li>
+                <li class="fragment">.toLowerCase()</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Data Type 2: Number</h2>
+            <p class="fragment"> You don’t have quotation marks around them.</p>
+            <p class="fragment">A number can be an <span style="color:yellow;">integer </span>(also called a whole number) such as 1, 2, -10 </p>
+            <p class="fragment">Or it can be a decimal number (also known as a <span style="color:yellow;">floating point</span>) such as 5.4324 </p>
+            <p class="fragment">Numbers CANNOT by letters or symbols, including commas. </p>
+            <p class="fragment">Create a variable called number, and add your own number and then console log it.</p>
+        </section>
+
+        <section>
+            <h2>Data Type 2: Number</h2>
+            <p>It should look like this:</p>
+<pre><code class="js" data-trim contenteditable>
+var number = 47;
+console.log(number);
+</code></pre>            
+        </section>
+
+        <section>
+            <h2>More on numbers: Operators</h2>
+            <p>Mathematical operators in JS are pretty much the same as what you are used to. </p>
+            <p class="fragment">To add two numbers, you use the addition operator, which is + It does the math just like you would think.</p>
+            <ul>
+                <li class="fragment">+ is the addition operator</li>
+                <li class="fragment">- is the subtraction operator</li>
+                <li class="fragment">/ is the division operator</li>
+                <li class="fragment">* is the multiplication operator</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>More on numbers: Operators</h2>
+            <p>Game example:Say you create a game that starts a user off with 200 points. Then, the user gets 100 points for crashing an alien space ship. You could write the following code to keep track.</p>
+<pre class="fragment"><code class="js" data-trim contenteditable> 
+var score = 200;
+score = score + 100;
+</code></pre>
+        </section>
+
+        <section>
+            <h2>More on numbers: Operators</h2>
+            <p>Most coders use mathematical shorthand to make their code easier. You can do with with the four operators we learned.</p>
+            <p class="fragment">To add something to a variable you write:</p>
+            <p class="fragment"> the variable += the value you are adding</p>
+<pre class="fragment"><code class="js" data-trim contenteditable> 
+score += 100;
+</code></pre>
+            <p class="fragment">This will add 100 to the variable named ‘score’ and is easier that always writing score = score + 100;.</p>
+        </section>
+
+        <section>
+            <h2>Numbers Exercise</h2>
+            <p>Create variables that store information about time.</p>
+<pre class="fragment"><code class="js" data-trim contenteditable> 
+var secondsPerMin =
+var minsPerHour = 
+var hoursPerDay =
+var daysPerWeek =
+var weeksPerYear =
+</code></pre>
+            <p class="fragment">1. Use JavaScript to calculate the number of seconds in a day and log the answer to the console.</p>
+            <p class="fragment">2. Log the number of second in a year</p>
+            <p class="fragment">3. Log the number of seconds you have lived</p>
+        </section>
+
+        <section>
+            <h2>Order of Operations Review</h2>
+            <ul>
+                <li><b>P</b>arenthesis</li>
+                <li><b>E</b>xponents</li>
+                <li><b>M</b>ultiplication</li>
+                <li><b>D</b>ivision</li>
+                <li><b>A</b>ddition</li>
+                <li><b>S</b>ubtraction</li>
+            </ul>
+<pre class="fragment"><code class="js" data-trim contenteditable> 
+var answer= 4 * (6-2)
+</code></pre>
+        </section>
+
+        <section>
+            <h2>When would we use order of operations in coding?</h2>
+            <p>Business!</p>
+<pre class="fragment"><code class="js" data-trim contenteditable> 
+var wholesalePrice = 5.45;
+var retailPrice = 9.99;
+var quantity = 47;
+var salesTotal = retailPrice * quantity;
+var profit = salesTotal - (wholesalePrice * quantity);
+</code></pre>       
+        </section>
+
+        <section>
+            <h2>Exercise</h2>
+            <p>The Lifetime Supply Calculator</p>
+            <p class="fragment">Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!</p>
+            <ul>
+                <li class="fragment">Store your current age into a variable.</li>
+                <li class="fragment">Store a maximum age into a variable.</li>
+                <li class="fragment">Store an estimated amount per day (as a number).</li>
+                <li class="fragment">Calculate how many you would eat total for the rest of your life.</li>
+                <li class="fragment">Output the result to the screen like so: "You will need NN to last you until the ripe old age of X".</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Data Type 3: Boolean</h2>
+            <ul>
+                <li class="fragment"> It is a weird word for a rather simple concept!</li>
+                <li class="fragment">This is a data type that can be either <span style="color:yellow">true or false</span>. There can be only two values. </li>
+                <li class="fragment">We use true or false to represent anything that has two opposites or two possible states. Think like a light switch (on or off).</li>
+                <li class="fragment">In JSBin, create a variable called “boole” (named after the man who started using this concept) and set it equal to true or false, and then console.log "boole".</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Data Type 3: Boolean</h2>
+            <p>It should look like this:</p>
+<pre><code class="js" data-trim contenteditable>
+var boole = true;
+console.log(boole);
+</code></pre>            
+        </section>
+
+        <section>
+            <h2>Data Type 4: Arrays</h2>
+            <p class="fragment">Arrays are used as a way to represent <span style="color:yellow">a list of things</span>. </p>
+            <p class="fragment">Anything can go in this list (numbers, strings, booleans, or a combination of all of these)</p>
+            <p class="fragment">Arrays are helpful because in JS they come with built in tools to help you manipulate them easier, and they help you keep things more organized.</p>
+            <p class="fragment">For example, you could create a list of all 50 states, of your shopping list, or of the makeup you use.</p>
+        </section>
+
+        <section>
+            <h2>Data Type 4: Arrays</h2>
+            <p class="fragment">For arrays, you will need to use the square braces [ ] and put a comma between each item. And remember to put quotes around the strings!</p>
+            <p class="fragment">You should make three different arrays in your JBbin that look something like this:</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>
+var arr = ["laura", "cool", "awesome"];
+var nums = [47,15,14];
+var favoriteFoods = ["pizza", "ice cream", "burgers"];
+</code></pre> 
+        </section>
+
+        <section>
+            <h2>Data Type 4: Arrays</h2>
+            <p class="fragment">The great thing about arrays is that you can refer to specific items in array by their <span style="color:yellow">number indices</span>.</p>
+            <p class="fragment">Each item in an array is invisibly assigned a number</p>
+            <p class="fragment">JS uses <span style="color:yellow">zero indexing </span>to assign the numbers which means that the first item is labeled with a 0 and then it increased by one.</p>
+        </section>
+
+        <section>
+            <h2>Number Indices</h2>
+            <p>In this array, </p>
+<pre><code class="js" data-trim contenteditable>  
+var array=[“hi”, “bye”, “cool”];
+</code></pre> 
+            <p class="fragment">hi=0, bye=1, cool=2 </p>
+            <p class="fragment">Once you know the number assigned to each item, you can write code that is specific to each.</p>
+            <p class="fragment">For example, if I wanted the console to log the third items in my var array, I would write </p>
+<pre class="fragment"><code class="js" data-trim contenteditable>            
+console.log(array[2]);
+</code></pre> 
+            <p class="fragment">This will console log the third thing in that array and show me the item “cool”. If I just wrote console.log(array); the console would print all three items in the array.</p>
+        </section>
+
+        <section>
+            <h2>Working with Arrays</h2>
+<pre><code class="js" data-trim contenteditable>              
+var classes = [];
+
+classes[0] = 'HTML 101';						
+classes[1] = 'JS 101';
+
+classes.push('JS 102');
+classes.pop();
+</code></pre> 
+<pre><code class="js" data-trim contenteditable> 
+var i = 0;
+classes[i]; // ??
+
+classes[1];
+
+classes.pop(); //??
+
+classes.length;
+</code></pre> 
+        </section>
+
+        <section>
+            <h2>Error Checking in JSBin</h2>
+            <p class="fragment">It is very important to use the console and JSBin to check for errors! You can use the error messages you find the lines where there is an error in your code. You can add numbers to your lines in your JSBIn by double clicking on JavaScript at the top of the column.</p>
+            <p class="fragment">“Syntax error” generally means you have just entered some JS incorrectly, and the computer doesn’t understand. Fixing these problems will make you a really good debugger!</p>
+        </section>
+
+        <section>
+            <h2>Data Type 5: Objects</h2>
+            <p>Warm Fuzzy Feeling</p>
+            <img src="images/warm.jpg" alt="">
+        </section>
+
+        <section>
+            <h2>Data Type 5: Objects</h2>
+            <ul>
+                <li class="fragment">Objects are lists of key value-pairs.</li>
+                <li class="fragment">You use objects when you want to have a lot of information about one particular topics or subject.</li>
+                <li class="fragment">You use curly braces {} to contain everything in the object, and you write the information vertically as opposed to an array, in which you write horizontally</li>
+                <li class="fragment">Pay close attention to syntax! (colons, curly braces, and commas)</li>
+            </ul> 
+      </section>
+
+      <section>
+          <h2>Data Type 5: Objects</h2>
+          <p>Example of an object</p>
+<pre><code class="js" data-trim contenteditable>   
+var myMeals {
+    breakfast: "eggs",
+    lunch: "burger",
+    dinner: "spaghetti"
+}
+</code></pre>
+        <p>You can an store things like details about a person.</p>
+<pre><code class="js" data-trim contenteditable>   
+var profileObj = {
+	name: "Laura",
+	city: "San Francisco",
+    favoriteNumber: 47,
+    favoriteFoods: ["chinese", "italian", "cajun"];
+}
+</code></pre>
+      
+      </section>
+
+      <section>
+          <h2>Data Type 5: Objects</h2>
+          <p>In JSBin, create an object for a car</p>
+      </section>
+
+      <section>
+          <h2>Data Type 5: Objects</h2>
+          <p>It should look something like this:</p>
+<pre><code class="js" data-trim contenteditable>   
+var car = {
+	color: "black",
+	model: "mustang",
+	year: 1990,
+	features: ["radio", "seat warmers", "power windows"] 
+}
+</code></pre>
+      </section>
+
+        <section>
+        <h2>Data Type 5: Objects</h2>
+        <ul>
+            <li class="fragment">Note that you can put numbers, strings, or arrays in your objects.</li>
+            <li class="fragment">Remember to put any word (anything not a number) in quotes.</li>
+            <li class="fragment">In the car example, the color, model, year, and features are the KEYS of the Object, and the black, mustang, and 1990 are VALUES.</li>
+            <li class="fragment">Keys are treated like strings but they don’t have to have quotes in JS, BUT values HAVE to have quotes if they are strings.</li>
+        </ul>
+      </section>
+
+      <section>
+          <h2>Object Assignment</h2>
+          var angelTheCat = {};
+<pre><code class="js" data-trim contenteditable> 
+angelTheCat.furColor = "orange";
+
+//OR
+
+var angelTheCat = {"furColor" : "orange"};
+</code></pre>
+      </section>
+
+      <section>
+          <h2>Access with Dots</h2>
+<pre><code class="js" data-trim contenteditable>           
+var angelTheCat = {};
+						
+angelTheCat.furColor = "orange";
+						
+var furVariable = angelTheCat.furColor;
+
+furVariable; //??
+
+angelTheCat.furColor = "grey";
+
+furVariable; //??
+</code></pre>
+      </section>
+
+      <section>
+          <h2>Brackets</h2>
+<pre><code class="js" data-trim contenteditable>   
+angelTheCat["fur color"] = "orange";
+
+var facebookFriends = {};
+facebookFriends[12323] = angelTheCat;
+</code></pre>
+      </section>
+
+      <section>
+          <h2>Array of Objects</h2>
+          <h2>Brackets</h2>
+<pre><code class="js" data-trim contenteditable>  
+var cuteCats = [
+
+    { name: "Angel", age: 18, furColor: "grey" },
+    { name: "Evil", age: 14, furColor: "red" },
+    { name: "Meh", age: 12, "Fur Color": "white" }
+
+]
+</code></pre>
+<pre><code class="js" data-trim contenteditable> 
+cuteCats[0].name = ;//?
+
+cuteCats[1]furColor;//?
+
+cuteCats[2]["Fur Color"] = ;//?
+</code></pre>
+        </section>
+
+        <section>
+            <h2>Exercise</h2>
+            <p><a href="https://repl.it/enc/2">Click here for the exercise</a></p>
+        </section>
+ 
+
+        <section>
+            <h2>Comments in JS</h2>
+            <p>To make a comment in your code, use // </p>
+            <p>This is very important for writing code. If you have a lot of comments, it will be easier for people to understand your code.</p> 
+        </section>
+
+        <section>
+            <h2>All the Types</h2>
+            <p>In JSBin, create a variable for each of the five different data types we covered and assign them values.</p>
+        </section>
+
+        <section>
+            <h1>Review</h1>
+        </section>
+
+        <section>
+            <h2>Question 1</h2>
+            <img src="images/q1.png" alt="">
+        </section>
+
+        <section>
+            <h2>Question 2</h2>
+            <img src="images/q2.png" alt="">
+        </section>
+
+        <section>
+            <h2>Question 3</h2>
+            <img src="images/q3.png" alt="">
+        </section>
+
+        <section>
+            <h2>Question 4</h2>
+            <img src="images/q4.png" alt="">
+        </section>
+
+        <section>
+            <h2>Review: Primitive Data Types</h2>
+            <p>Variables can store different "types" of data, like:</p>
+            <ul>
+                <li><b>string:</b> an immutable string of characters:</li>
+<pre><code class="js" data-trim contenteditable>
+var greeting = 'Hello World';
+var restaurant = "Chipotle";
+</code></pre>
+                <li><b>number:</b> whole (6, -102) or floating point (5.8737): </li>
+<pre><code class="js" data-trim contenteditable>
+var myAge = 28;
+var pi = 3.14;
+</code></pre>
+                <li><b>boolean:</b> Represents logical values true or false:</li>
+<pre><code class="js" data-trim contenteditable>
+var catsAreBest = false;
+var dogsRule = true;
+</code></pre>
+                </ul>                                 
+        </section>
+
+        <section>
+            <h2>Review: Primitive Data Types</h2>
+            <ul>
+            <li><b>undefined:</b> Represents a value that hasn't been defined.</li>
+<pre><code class="js" data-trim contenteditable>
+var notDefinedYet;
+</code></pre>
+            <li><b>null:</b> Represents an explicitly empty value.</li>
+<pre><code class="js" data-trim contenteditable>
+var goodPickupLines = null;
+</code></pre>
+            </ul>
+        </section>
+
+        <section>   
+            <h2>Conditional Statements</h2>
+            <p class="fragment">Conditionals allow you to use a users input to change the results of a program or statement.</p>
+            <p class="fragment">All conditions, no matter how complex, can and must be broken down to yes or no, true or false.</p>
+            <p class="fragment">Example: If your user destroys all 10 alien spaceships in your game, your program will allow them to move on to the next level.</p>
+        </section>
+
+        <section>
+            <h2>Conditional Statements</h2>
+            <p>A very simple conditional statement: (the one we will start with) is <span style="color:yellow">If something is true, then do this</span>. </p> 
+<pre><code class="js" data-trim contenteditable>
+if ( the condition ) {
+//the code that runs if the condition is true, called a code block
+}   
+</code></pre>
+        </section>
+
+        <section>
+            <h2>Note!</h2>
+            <p>There is no semi-colon at the end of the statement.</p>
+        </section>
+
+        <section>
+            <h2>The if statement</h2>
+            <p>Use <code>if</code> to tell JS which statements to execute, based on a condition.</p>
+<pre><code class="js" data-trim contenteditable>
+var x = 5;
+
+if (x > 0) {
+  console.log('x is a positive number!');
+}
+</code></pre>
+            <p>An 'if' statement tests a condition to see if it is true. If the condition is true, the code inside the 'if' statement is run. Since the value of 'x' is 5, and 5 is greater than 0, the condition is evaluated as true and the code inside our 'if' statement is executed. </p>
+     </section>
+
+     <section>
+          <h2>The if and else statements</h2>
+          <img src="images/diagram.png" alt="">
+     </section>
+
+     <section>
+         <h2>The if and else statements</h2>
+         <p>Example:</p>
+<pre><code class="js" data-trim contenteditable>            
+var answer = prompt (“What programming language is the name of a gem?”);
+if ( answer === “Ruby” ) {
+    alert(“Correct!”);
+}
+//If you want an option for if the person gets it wrong
+else {
+    alert(“That’s not right!”);
+}
+//only one message will appear 
+</code></pre>
+     </section>
+
+     <section>
+         <h2>Why so many equal signs?</h2>
+         <p>Three equal signs is an equality operator. </p>
+         <p>It's used to test if two values are exactly the same. If they are the same, then the condition is true and the code inside the braces runs.</p>
+     </section>
+    
+    <section>
+        <h2>Exact equivalence</h2>
+        <p>In the earlier JavaScript we wrote, write “ruby” instead of “Ruby”. Do you get the right answer?</p>
+        <p class="fragment">A solution</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>         
+if ( answer.toUpperCase() === “RUBY” ) {
+    alert(“Correct!”);
+}
+</code></pre>
+        <p class="fragment">This will make the answer that your user gives correct, no matter the case!</p>
+    </section>
+
+    <section>   
+        <h2>Exercise</h2>
+        <ul>
+            <li>Create a variable called favoriteFood and give it the value of prompt(“What is your favorite food?”).</li>
+            <li>Create a conditional statement so that if the user answers your favorite food, they get an alert that says “Mine too!”. If they don’t, they get an alert that says “Ewwww”. </li>
+            <li>Make sure that the user can enter their answer in any capital letters or non-capital letters</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>More on operators</h2>
+        <p style="font-size: 30px">Use these operators to compare two values for equality, inequality, or difference.</p>
+<pre><code class="js" data-trim contenteditable>  
+  var myAge = 28;
+</code></pre>
+<table border="1" cellspacing="5" cellpadding="5" style="font-size: 16px; line-height: 1em;">
+  <thead>
+  <tr><td>Operator  <td>Meaning <td>True expressions
+  <tbody>
+  <tr><td>==    <td>Equality <td><code>myAge == 28</code> <br> <code>myAge == '28'</code> <br> <code>28 == '28'</code>
+  <tr><td>===  <td>Strict equality <td><code>myAge === 28</code>     
+  <tr><td>!=     <td>Inequality <td><code>myAge != 29</code>      
+  <tr><td>!==   <td>Strict inequality <td><code>myAge != '28'</code> <br> <code>28 != '28'</code>
+  <tr><td>&gt;  <td>Greater than <td><code>myAge &gt; 25</code> <br> <code>'28' &gt; 25</code>   
+  <tr><td>&gt;=<td>Greater than or equal <td><code>myAge &gt;= 28</code> <br> <code>'28' &gt;= 25</code>
+  <tr><td>&lt;   <td>Less than <td><code>myAge &lt; 30</code>  <br> <code>'28' &lt; 30</code>
+  <tr><td>&lt;= <td>Less than or equal <td><code>myAge &lt;= 28</code>  <br> <code>'28' &lt;= 28 </code>
+</table>
+
+            <p><b>Common mistake</b>: Do not confuse <code>=</code> (the assignment operator) with <code>==</code>.</p>
+    </section>
+
+    <section>   
+        <h2>Example</h2>
+        <p>If a visitor is under or equal to 18 years old, you can deny them access to your site. How would you write that in JS?</p>
+    </section>
+
+    <section>
+        <h2>Operators</h2>
+        <table>
+            <tr>
+                <th>True</th>
+                <th>False</th>
+            </tr>
+            <tr>
+                <td>5 < 10</td>
+                <td>10 < 5</td>
+            </tr>
+             <tr>
+                <td>10 >= 9</td>
+                <td>9 >= 10</td>
+            </tr>
+             <tr>
+                <td>9 <= 9</td>
+                <td>10 <= 9</td>
+            </tr>
+             <tr>
+                <td>100 === 100</td>
+                <td>100 === 101</td>
+            </tr>
+             <tr>
+                <td>0 !== 1</td>
+                <td>0 !== 0</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Remember</h2>
+        <ol>
+            <li class="fragment">Remember 100>100 is false, BUT 100>=100 is true.</li>
+            <li class="fragment">-12 < 0 is correct because negative numbers are less than zero. </li>
+            <li class="fragment">Numbers are always less than letters.</li>
+            <li class="fragment">What do you think happens if you say: “apple”<“bear”</li>
+            <li class="fragment">What about just two ==  ? (Just value, not type and value)</li>
+            <li class="fragment">!== means that two things are not equal, you can test for that too! (ex: 10 !==9 ) </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>True or false</h2>
+        <p>“javascript”===“JavaScript”</p>
+    </section>
+
+    <section>
+        <h2>True or false</h2>
+        <p>“3”===3</p>
+    </section>
+
+    <section>
+        <h2>True or false</h2>
+        <p>“lion” > “zebra”</p>
+    </section>
+
+    <section>
+        <h2>True or false</h2>
+        <p>“lion” !== “zebra”</p>
+    </section>
+
+    <section>
+        <h2>True or false</h2>
+        <p>1000 <= 1000</p>
+    </section>
+
+    <section>
+        <h2>Conditionals with Booleans</h2>
+        <p>You can use a boolean (true or false) as a condition in your if/else statements. </p>
+<pre><code class="js" data-trim contenteditable>  
+if ( true ) {
+    document.write(“This is Correct!”);
+}
+else {
+    document.write(“This is Incorrect!”);
+}
+</code></pre>
+    </section>
+
+    <section>
+        <h2>Programming Multiple Outputs</h2>
+        <p>Often times, we have more that one inputs or conditions, and therefore, will need more outputs.</p>
+        <p>Example: If it is sunny and warm, you can go to the beach. But if it is warm and raining, you will probably stay in.</p>
+        <img src="images/ifelse.png" alt="">     
+    </section>
+
+    <section>
+        <p>No limit to the number of else if statements that you can have in your code!</p>
+<pre><code class="js" data-trim contenteditable>  
+var isTeacher = prompt(“Are you a teacher?”);
+var isStudent = prompt(“Are you a student?”);
+if ( isTeacher.toUpperCase === “YES” ) {
+    alert('Welcome Teacher');
+}
+else if (isStudent.toUpperCase === “YES”) {
+    alert('Welcome student');
+}
+else {
+  alert ("Who are you?”);
+}
+</code></pre>
+    </section>
+
+    <section>
+        <h2>Multiple Outputs</h2>
+        <p>What is the value of the variable itemsToBuy?</p>
+ <pre><code class="js" data-trim contenteditable>        
+var itemToBuy = " ";
+var savings = 100;
+if ( savings > 500 ) {
+  itemToBuy = "Computer";
+} else if ( savings > 200 ) {
+ itemToBuy = "Phone";
+} else if ( savings > 0 ) {
+ itemToBuy = "Dinner";
+} else {
+ itemToBuy = "...still saving...";
+}
+</code></pre>
+    </section>
+
+    <section>
+        <h2>Exercise</h2>
+        <p>Clock Exercise</p>
+        <ol>
+            <li>Create a variable called time and set it equal to the time that the user answers when you ask “What time is it?”</li>
+            <li>Create an if statement so that if the time is less than 10, the user will be greeted with a “Good Morning!” **NOTE: We are using military time.</li>
+            <li>If the time is less than 20, the user should be greeted by a “Good Afternoon!”.</li>
+            <li>If the answer is anything else, the user should be greeted by a “Good Evening!”.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Explaining Code</h2>
+        <p>The importance of being able to explain code and leaving comments!</p>
+    </section>
+
+    <section>
+        <h2>Another exercise</h2>
+        <p>Explain this code</p>
+<pre><code class="js" data-trim contenteditable>  
+var cupcakesSold = prompt (“How many cupcakes did you sell today?”);   
+var profitMargin = 30
+if (cupcakesSold < profitMargin ) {
+    alert (“Gotta sell more!”);
+}
+else if (cupcakesSold = profitMargin) {
+    alert(“Broke even!”);
+}
+else {
+    alert(“We are doing well!!!”);
+}
+</code></pre>       
+    </section>
+
+    <section>
+        <h2>Another exercise</h2>
+        <p>Explain this code</p>
+<pre><code class="js" data-trim contenteditable> 
+var wholesalePrice = 5.45;
+var retailPrice = 9.99;
+var quantity = 47;
+var salesTotal= retailPrice * quantity;
+var profit= salesTotal-(wholesalePrice * quantity);
+if (profit > 400 ) {
+    document.write (“Time to go home”);
+}
+else {
+    document.write (“Keep working”);
+} 
+</code></pre>       
+    </section>
+
+    <section>
+        <h2>Logical Operators</h2>
+        <p>These are typically used in combination with the comparison operators:</p>
+<pre><code class="js" data-trim contenteditable> 
+var posNum = 4;
+var negNum = -2;
+</pre></code>
+<table border="2" cellspacing="5" cellpadding="5" style="font-size: 16px; line-height: 1em;">
+ <thead>
+  <tr><td>Operator <td>Meaning <td>True expressions
+ <tbody>
+ <tr><td>&&  <td>AND <td> <code>posNum &gt; 0 && negNum &lt; 0</code><br><br> <code>4 &gt; 0 && -2 &lt; 0</code>
+ <tr><td>||    <td>OR   <td> <code>posNum &gt; 0 || negNum &gt; 0 </code><br><br> <code>4 &gt; 0 || -2 &gt; 0 </code>
+ <tr><td>!     <td>NOT <td> <code>!(posNum === negNum)</code>  <br><br> <code> !(posNum &lt; 0) </code>
+</table>
+
+    <p>When combining together multiple conditions, use parantheses to group:</p>
+<pre><code class="js" data-trim contenteditable> 
+var myAge = 28;
+if ((myAge &gt;= 0 && myAge &lt; 3)  || myAge &gt; 90) {
+  console.log('You\'re not quite in your peak.');
+}
+</pre></code>
+    </section>
+
+    <section>
+        <h2><span style="text-decoration: underline">And</span> Operator</h2>
+        <p>All statements have to be correct for something to be true (and for the program to run)</p>
+        <p class="fragment">Example: You need to be near a pool AND know how to swim in order to go swimming. </p>
+        <p class="fragment">We use && in order to have both of the conditions met. You put one condition on either side of the &&.</p>
+        <p class="fragment">You can have more than one set of &&</p>
+<pre class="fragment"><code class="js" data-trim contenteditable> 
+var age = 30;
+var gender= “female”;
+if ( age > 18 && gender === “female” ) {
+    alert(“Welcome!”);
+}
+</pre></code>
+    </section>
+
+    <section>
+        <h2><span style="text-decoration: underline">Or</span> operator</h2>
+        <p>One of the statements has to be correct for something to be true (and for the program to run).</p>
+        <p class="fragment">Example: You need to be near a pool OR near the beach in order to go swimming. </p>
+        <p class="fragment">We use || in order to have both of the conditions met. You put one condition on either side of the ||.</p>
+<pre class="fragment"><code class="js" data-trim contenteditable> 
+var agree = prompt (“Do you agree?”);
+if ( agree === “Yes” || agree === “Y” ) {
+    alert(“Welcome!”);
+}
+</pre></code>       
+    </section>
+
+    <section>   
+        <h2>What will appear in the browsers console?</h2>
+<pre class="fragment"><code class="js" data-trim contenteditable> 
+        var ships = 10;
+var score = 0;
+if (  ships === 0 || score === 0 ) {
+  console.log('Game over.');
+}  else {
+  console.log('Your score is zero.');
+}
+</pre></code>  
+    </section>
+
+    <section>
+        <h2>What will appear in the browsers console?</h2>
+<pre class="fragment"><code class="js" data-trim contenteditable> 
+var x = 10;
+var y = 20;
+if (  x < 10 && y > 10 ) {
+  console.log('The condition passes.');
+} else {
+  console.log('The condition fails.');
+}
+</pre></code> 
+    </section>
+
+    <section>   
+        <h2>If I Want To Go Out, how do i change me code?</h2>
+<pre class="fragment"><code class="js" data-trim contenteditable> 
+var hoursOfWork = 2;
+var today = 'Friday'
+
+if ( hoursOfWork >= 10 && today === 'Friday' ) {
+  alert(“Too much work! I can’t go out”);    
+} 
+else if ( hoursOfWork >= 5 && today === 'Friday' ) {
+  alert(“I will catch up with you when I can");    
+}
+else if ( hoursOfWork ===2 && today === 'Friday' ) {
+  alert("It's Friday, let’s go!”);   
+} else {
+  alert("This isn't Friday. I need to stay home.");
+}
+</pre></code> 
+    </section>
+
+    <section>
+        <h2>Review Exercise</h2>
+        <ul>
+            <li class="fragment">Create a variable named busRunning and ask the user if the bus is running today.</li>
+            <li class="fragment">Create a second variable named clipperCard and ask the user how much money they have on their Clipper card.</li>
+            <li class="fragment">Create a conditional statement that says if the bus is running AND the user has more than or equal to 5 on their Clipper card, the program gives them an alert that says “You can take the bus!”</li>
+            <li class="fragment">Otherwise, the user should get an alert that says “No bus for you”</li>
+        </ul>
+        <aside class="notes">
+var busRunning = prompt(“Is the bus running today?”);
+var clipperCard= prompt(“How much money is on your Clipper card?”);
+if (busRunning.toUpperCase() === “YES” && clipperCard >= 5 ) {
+alert (“You can take the bus!”)
+}
+else {
+alert(“No bus for you”);
+}
+        </aside>
+    </section>
+
+    <section>   
+
+    </section>
 
         <section style="text-align: left;">
             <h1>THE END</h1>
