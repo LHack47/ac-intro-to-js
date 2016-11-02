@@ -196,16 +196,16 @@ console.log(x);
 </code></pre>
             <p>Or declare and initialize in one statement:</p>
 <pre><code class="js" data-trim contenteditable>
-    var x;
-    x = 5;
-    var y = 2;
-    console.log(y);
+var x;
+x = 5;
+var y = 2;
+console.log(y);
 </code></pre>
 
             <p>Re-assign the value later:</p>
 <pre><code class="js" data-trim contenteditable>
-    var x = 5;
-    x = 1;
+var x = 5;
+x = 1;
 </code></pre>
         </section>
 
@@ -240,20 +240,20 @@ console.log(x);
             <br>
             OK:
 <pre><code class="js" data-trim contenteditable>
-    var numPeople, $mainHeader, _num, _Num;
+var numPeople, $mainHeader, _num, _Num;
 </code></pre>
             Not OK:
 <pre><code class="js" data-trim contenteditable>
-    var 2coolForSchool, soHappy!
+var 2coolForSchool, soHappy!
 </code></pre>                                                                  
         </section>
 
         <section>
             <h2>Alert Command Using Variables</h2>
 <pre><code class="js" data-trim contenteditable>            
-var message= “Hello!”;
+var message = "Hello!";
 alert(message);
-message=“Hello! My name is Laura!”;
+message = "Hello! My name is Laura!";
 alert(message);
 </code></pre>
         </section>
@@ -307,7 +307,7 @@ console.log("Beyonce");
             <p> Say you want to save your name (and remember, your name is a string) because we want to use it in the program you are writing.</p>
             <p>You can use the keyword var like this</p> 
 <pre><code class="js" data-trim contenteditable>
-var name = “Laura”;
+var name = "Laura";
 </code></pre>  
             <p class="fragment">‘name’ will become a keyword in a program, and “Laura” is the value assigned to it.</p>          
         </section>
@@ -354,7 +354,7 @@ console.log(name);
             <p class="fragment">We added someone’s name to our website. What if we want to add other text to their name?</p>
             <p class="fragment">We need to add the string (generally with a space) and the + sign </p>
 <pre class="fragment"><code class="js" data-trim contenteditable>            
-var name=prompt("What is your name?");
+var name = prompt("What is your name?");
 document.write("Hello " + name);
 </code></pre>
             <p class="fragment">The process of combining strings is called <span style="color:yellow">Concatenation</span>. In JS, you combine strings with a + operator like this: 'one string ' + ' another string'</p>
