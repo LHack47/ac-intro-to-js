@@ -150,7 +150,7 @@
         <section>
             <h2>Javascript Console</h2>
             <p class="fragment">This is located in the Developer Tools on Chrome.</p>
-            <p class="fragment">You can find errors in your JavaScript, find our what type of error it is, and determine which line of code the error is on.</p>
+            <p class="fragment">You can find errors in your JavaScript, find out what type of error it is, and determine which line of code the error is on.</p>
             <p class="fragment">All browsers have a JavaScript interpreter.</p> 
             <p class="fragment">One of the main ways to keep track of things happening in our programs is to use the following JavaScript statement</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>
@@ -196,16 +196,16 @@ console.log(x);
 </code></pre>
             <p>Or declare and initialize in one statement:</p>
 <pre><code class="js" data-trim contenteditable>
-    var x;
-    x = 5;
-    var y = 2;
-    console.log(y);
+var x;
+x = 5;
+var y = 2;
+console.log(y);
 </code></pre>
 
             <p>Re-assign the value later:</p>
 <pre><code class="js" data-trim contenteditable>
-    var x = 5;
-    x = 1;
+var x = 5;
+x = 1;
 </code></pre>
         </section>
 
@@ -240,20 +240,20 @@ console.log(x);
             <br>
             OK:
 <pre><code class="js" data-trim contenteditable>
-    var numPeople, $mainHeader, _num, _Num;
+var numPeople, $mainHeader, _num, _Num;
 </code></pre>
             Not OK:
 <pre><code class="js" data-trim contenteditable>
-    var 2coolForSchool, soHappy!
+var 2coolForSchool, soHappy!
 </code></pre>                                                                  
         </section>
 
         <section>
             <h2>Alert Command Using Variables</h2>
 <pre><code class="js" data-trim contenteditable>            
-var message= “Hello!”;
+var message = "Hello!";
 alert(message);
-message=“Hello! My name is Laura!”;
+message = "Hello! My name is Laura!";
 alert(message);
 </code></pre>
         </section>
@@ -307,7 +307,7 @@ console.log("Beyonce");
             <p> Say you want to save your name (and remember, your name is a string) because we want to use it in the program you are writing.</p>
             <p>You can use the keyword var like this</p> 
 <pre><code class="js" data-trim contenteditable>
-var name = “Laura”;
+var name = "Laura";
 </code></pre>  
             <p class="fragment">‘name’ will become a keyword in a program, and “Laura” is the value assigned to it.</p>          
         </section>
@@ -316,10 +316,10 @@ var name = “Laura”;
             <h2>Expressions</h2>
             <p>Variables can also store the result of any "expression":</p>
 <pre><code class="js" data-trim contenteditable> 
-    var name = 'Claire';
-    var greeting = 'Hello ' + name;
-    var title = 'Baroness';
-    var formalGreeting = greeting + ', ' + title;
+var name = 'Gaga';
+var greeting = 'Hello ' + name;
+var title = 'Lady';
+var formalGreeting = greeting + ', ' + title;
 </code></pre>
         </section>
 
@@ -328,7 +328,7 @@ var name = “Laura”;
             <p class="fragment">If you want to ask your user a question in a pop up window, you can use the prompt command. It is similar to alert.</p>
             <p class="fragment">You use prompt and then generally follow that with a string.</p>
 <pre class="fragment"><code class="js" data-trim contenteditable> 
-prompt(“What is your favorite food?”);
+prompt("What is your favorite food?");
 </code></pre>
             <p class="fragment">Try making several prompts in JSBin</p>
         </section>
@@ -337,7 +337,7 @@ prompt(“What is your favorite food?”);
             <h2>Prompt command</h2>
             <p>What is a way that we have learned to store the information for what the user types in?</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>            
-var name=prompt(“What is your name?”);
+var name = prompt("What is your name?");
 console.log(name);
 </code></pre>
         </section>
@@ -354,7 +354,7 @@ console.log(name);
             <p class="fragment">We added someone’s name to our website. What if we want to add other text to their name?</p>
             <p class="fragment">We need to add the string (generally with a space) and the + sign </p>
 <pre class="fragment"><code class="js" data-trim contenteditable>            
-var name=prompt("What is your name?");
+var name = prompt("What is your name?");
 document.write("Hello " + name);
 </code></pre>
             <p class="fragment">The process of combining strings is called <span style="color:yellow">Concatenation</span>. In JS, you combine strings with a + operator like this: 'one string ' + ' another string'</p>
@@ -372,8 +372,8 @@ document.write("Hello " + name);
             <p class="fragment">When you get information from your user from a prompt or even a web form, JavaScript stores the data as a string not a number.</p>
             <p class="fragment">Try it out</p> 
 <pre class="fragment"><code class="js" data-trim contenteditable>            
-var peanut= prompt(“How many peanut butter sandwiches do you have?”)
-var ham= prompt(“How many ham sandwiches do you have?”)
+var peanut = prompt("How many peanut butter sandwiches do you have?")
+var ham = prompt("How many ham sandwiches do you have?")
 var totalSandwich = peanut + ham;
 console.log(totalSandwich);
 </code></pre>
@@ -384,8 +384,8 @@ console.log(totalSandwich);
             <h2>new command</h2>
             <p>parseInt(); command allows you to pull the numbers you want out of the strings </p>
 <pre class="fragment"><code class="js" data-trim contenteditable>           
-var peanut= prompt(“How many peanut butter sandwiches do you have?”)
-var ham= prompt(“How many ham sandwiches do you have?”)
+var peanut = prompt("How many peanut butter sandwiches do you have?")
+var ham = prompt("How many ham sandwiches do you have?")
 var totalSandwich = peanut + ham;
 </code></pre>
     <p class="fragment">How could we use this to get the right number of sandwiches? You need to change to:</p>
@@ -480,7 +480,7 @@ var weeksPerYear =
                 <li><b>S</b>ubtraction</li>
             </ul>
 <pre class="fragment"><code class="js" data-trim contenteditable> 
-var answer= 4 * (6-2)
+var answer = 4 * (6-2)
 </code></pre>
         </section>
 
@@ -558,7 +558,7 @@ var favoriteFoods = ["pizza", "ice cream", "burgers"];
             <h2>Number Indices</h2>
             <p>In this array, </p>
 <pre><code class="js" data-trim contenteditable>  
-var array=[“hi”, “bye”, “cool”];
+var array = [“hi”, “bye”, “cool”];
 </code></pre> 
             <p class="fragment">hi=0, bye=1, cool=2 </p>
             <p class="fragment">Once you know the number assigned to each item, you can write code that is specific to each.</p>
@@ -627,13 +627,12 @@ var myMeals {
         <p>You can an store things like details about a person.</p>
 <pre><code class="js" data-trim contenteditable>   
 var profileObj = {
-	name: "Laura",
-	city: "San Francisco",
+    name: "Laura",
+    city: "San Francisco",
     favoriteNumber: 47,
     favoriteFoods: ["chinese", "italian", "cajun"];
 }
 </code></pre>
-      
       </section>
 
       <section>
@@ -672,7 +671,9 @@ angelTheCat.furColor = "orange";
 
 //OR
 
-var angelTheCat = {"furColor" : "orange"};
+var angelTheCat = {
+    furColor : "orange"
+};
 </code></pre>
       </section>
 
@@ -717,17 +718,36 @@ var cuteCats = [
 <pre><code class="js" data-trim contenteditable> 
 cuteCats[0].name = ;//?
 
-cuteCats[1]furColor;//?
+cuteCats[1].furColor;//?
 
 cuteCats[2]["Fur Color"] = ;//?
 </code></pre>
         </section>
 
         <section>
+            <h2>Nested Objects</h2>
+<pre><code class="js" data-trim contenteditable> 
+var doll = {
+	size: "large",
+	innerDoll: { size: "medium"}
+};
+
+doll.innerDoll.innerDoll = {size: "small"};
+
+console.log(doll);
+</code></pre>
+        </section>
+
+        <section>
+            <h2>Exercise</h2>
+            <p>Create an object to hold information on your favorite recipe. It should have properties for title (a string), servings (a number), and ingredients (an array of strings).</p>
+            <p>Console.log the object</p>
+        </section>
+
+        <section>
             <h2>Exercise</h2>
             <p><a href="https://repl.it/enc/2">Click here for the exercise</a></p>
         </section>
- 
 
         <section>
             <h2>Comments in JS</h2>
@@ -1204,8 +1224,356 @@ alert(“No bus for you”);
         </aside>
     </section>
 
-    <section>   
+    <section>
+        <h2>Review Exercise</h2>
+        <p>Create a variable named userAge and set it equal to the answer your user types into a prompt when asked how old they are. 
+If the user is over 25 tell them that they can rent a car. If not tell them that they can’t rent a car. </p>
+    </section>
 
+        <section>
+        <h2>Review Exercise</h2>
+        <p>Create a variable named userAge and set it equal to the answer your user types into a prompt when asked how old they are. 
+If the user is over 25 tell them that they can rent a car. If not tell them that they can’t rent a car. </p>
+    </section>
+
+    <section>   
+        <h1>Functions</h1>
+    </section>
+
+    <section>
+        <h2>What are functions?</h2>
+        <p>JavaScript is sometimes called a functional programming language.</p>
+        <p class="fragment">Functions are at the heart of JavaScript. They let you write code that you can quickly use again and again.</p>
+        <p class="fragment"><span style="color:yellow">Remember!</span>: Our song exercise at the beginning of class? The chorus acts like a function that you can call over and over when you want to singer to sing those lyrics. What are some real life functions?</p>
+        <p class="fragment">Coffee shop example</p>
+    </section>
+
+    <section>
+        <h2>Let's talk about syntax</h2>
+        <p>The following is how you write a function:</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>         
+function functionName () {
+}
+</pre></code> 
+        <p class="fragment">You name a function just like you name a variable. You should name a function something that makes sense in reference to what you are doing, and you need to use camel case.</p>
+        <p class="fragment">Function names cannot start with a number.</p>
+        <p class="fragment">Everything within the curly braces is the code block (just like in conditional statements)</p>
+    </section>
+
+    <section>
+        <h2>Running a Function</h2>
+        <p>The code that you put in the code block is run whenever the function is activated:</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>  
+function myGreeting () {
+    alert(“Good morning!”);
+}
+</pre></code> 
+        <p class="fragment">To activate our code block, we need to call the function. You do it like this:</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>  
+myGreeting();
+</pre></code> 
+        <p class="fragment">The parenthesis are what actually call the function. They are very important!</p>
+    </section>
+
+    <section>
+        <h2>Function</h2>
+        <p>In summary, Functions are re-usable collections of statements.</p>
+        <p>First declare the function:</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>  
+function sayMyName() {
+    console.log('Hi Jessica!');
+}
+</pre></code> 
+        <p>Then call it (as many times as you want): </p>
+<pre class="fragment"><code class="js" data-trim contenteditable>  
+sayMyName();
+</pre></code> 
+    </section>
+
+    <section>
+        <h2>Example in JSBin</h2>
+<pre class="fragment"><code class="js" data-trim contenteditable>  
+//Create your function first
+function alertRandom() {
+//create a new random number each time the function is run
+  var randomNumber = Math.floor(Math.random()*6)+1;
+  alert(randomNumber);
+}
+//calling the function
+alertRandom();
+</pre></code> 
+    </section>
+
+    <section>
+        <h2>Calling a function more than once:</h2>
+<pre class="fragment"><code class="js" data-trim contenteditable>  
+function alertRandom() {
+    var randomNumber = Math.floor(Math.random()*6)+1;
+    alert(randomNumber);
+}
+alertRandom();
+alertRandom();
+alertRandom();
+alertRandom();
+</pre></code> 
+    </section>
+
+    <section>
+        <h2>Variables and Functions</h2>
+<pre class="fragment"><code class="js" data-trim contenteditable>  
+var alertRandom = function () {
+    var randomNumber = Math.floor(Math.random()*6)+1;
+    alert(randomNumber);
+};
+</pre></code>   
+        <p class="fragment">This is an anonymous function and will run as part of the variable.</p>
+        <p class="fragment">We do have to end this statement with a semi-colon </p>
+    </section>
+
+    <section>
+        <h2>Review</h2>
+        <p>Which of the following describes a function?</p>
+        <ol>
+            <li>A function means the same things as a JavaScript program.</li>
+            <li>A function let’s you store a block of code that you can use over and over again.</li>
+            <li>A function is used to add decision-making to your program</li>
+            <li>A functions is used to hold similar pieces of information, like a database. </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Review</h2>
+        <p>Which of the following code snippets correctly shows how to create a function named sayHello which opens an alert dialog with the string "Hello" in it?</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>  
+function sayHello {
+    alert(“Hello”);
+}
+</pre></code>   
+ <pre class="fragment"><code class="js" data-trim contenteditable>  
+function sayHello (
+    alert(“Hello”);
+)
+</pre></code>  
+ <pre class="fragment"><code class="js" data-trim contenteditable>  
+function sayHello () {
+    alert(“Hello”);
+}
+</pre></code>  
+ <pre class="fragment"><code class="js" data-trim contenteditable>  
+var function=sayHello() {
+    alert(“Hello”);
+}
+</pre></code>  
+        </ol>
+    </section>
+
+    <section>
+            <h2>Coding Conventions: Spacing </h2>
+            <p>Use newlines between statements and use spaces to show blocks.</p>
+            <p>Bad:</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>  
+function addNumbers(num1,num2) {return num1 + num2;}
+</pre></code>  
+            <p>Good:</p>
+ <pre class="fragment"><code class="js" data-trim contenteditable>  
+function addNumbers(num1, num2) {
+    return num1 + num2;
+}
+</pre></code>  
+    </section>
+
+    <section>
+        <h2>Functions change the flow</h2>
+        <p class="fragment">Up until this point, our programs have been running form top to bottom. Functions allow the browser interpreter to jump around to be sure that proper code is being called depending on the contents of the function. </p>
+        <p class="fragment">Many developers write their functions at the beginning of their code (all together).</p>
+    </section>
+
+    <section>
+        <h2>Getting information from a function</h2>
+        <p>Functions don't just run JavaScript statements. They can also return values that you can use elsewhere in a program.</p>
+        <p class="fragment">Functions can also give something back when they finish. This is called returning a value.</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>  
+function goToCoffeeShop () {
+    return “Espresso is on the way”;
+}
+</pre></code> 
+        <p class="fragment">The value that's returned by the function can then be used in your program.</p>
+    </section>
+
+    <section>
+        <h2>Getting information from a function</h2>
+        <p class="fragment">‘return’ing something in JavaScript is very useful </p>
+        <p class="fragment">You can use its values for many other parts of your program (like displaying on your website, using to calculate new things, etc).</p>
+        <p class="fragment">If you want to check to see if a user has filled out a form, you can use a function to get the value of the input and then “return” true if there has been an input. </p>
+        <p class="fragment">Functions can have more that one return statement in them. (There can be conditionals!)</p>
+        <p class="fragment">Return statements should be the last thing in the code block of a function because they immediately exit the function.</p>
+    </section>
+
+    <section>
+        <h2>Return Values</h2>
+        <p>The return keyword returns a value to whoever calls the function (and exits the function):</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>          
+function addNumbers(num1, num2) {
+    var result = num1 + num2;
+    return result; // Anything after this line won't be executed
+}
+var sum = addNumbers(5, 2);
+</pre></code>
+        <p> You can use function calls in expressions:</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>          
+var biggerSum = addNumbers(2, 5) + addNumbers(3, 2);
+</pre></code>
+        <p>  You can even call functions inside function calls:</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>          
+var hugeSum = addNumbers(addNumbers(5, 2), addNumbers(3, 7));
+</pre></code>
+    </section>
+
+    <section>
+        <h2>Review</h2>
+        <p>After the code below runs, what value is stored in the variable dayOfWeek? </p>
+<pre class="fragment"><code class="js" data-trim contenteditable>          
+function getDay() {
+  return "Monday";
+  alert("Calculating day");
+  return "Friday";
+}
+
+var dayOfWeek = getDay();
+</pre></code>
+    </section>
+
+    <section>
+        <h2>Create in jsbin</h2>
+        <p class="fragment">1. Create a function named getYear -- don't add any code inside the function yet.</p>
+        <p class="fragment">2. Inside the function's code block add this line of code </p>
+<pre class="fragment"><code class="js" data-trim contenteditable>                 
+var year = new Date().getFullYear(); 
+</pre></code>
+        <p class="fragment">This creates a new variable and stores the current year in it.</p>
+        <p class="fragment">3. Now, add a statement that returns this variable from the function. </p>
+        <p class="fragment">4. Call the getYear function: store the returned value of the function in a new variable named yearToday.</p>
+    </section>
+
+    <section>
+        <h2>Sending information to a function</h2>
+        <p>You can give information to a function to change how it works.</p>
+        <p>Coffee shop example</p>
+        <p>JavaScript functions can also accept information called an argument, which you send to the function.</p>
+        <p>The argument is stored in a variable called a parameter that you can use inside the function.</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>                 
+function myFunction (parameter) {
+    //code block
+}
+</pre></code>
+        <p> Parameters act a lot like variables. </p>
+    </section>
+
+    <section>
+        <h2>Parameters and arguments</h2>
+        <p class="fragment">Passing an argument to a function</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>                 
+function goToTheCoffeeShop (drink) {
+    alert(drink + “ is on the way!”)”
+}
+goToTheCoffeeShop (“Espresso”);
+</pre></code>
+    <p class="fragment">You can pass different values and get different results!</p>
+    <p class="fragment">You can also have multiple arguments in a function.</p>
+    </section>
+
+    <section>
+        <h2>Multiple Arguments</h2>
+        <p>In our example, let’s say I also want something to eat.</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>                        
+function goToTheCoffeeShop (drink, pastry) {
+    alert(drink + “and ”+ pastry + “ are on the way!”)”
+}
+goToTheCoffeeShop (“Espresso”, “scone”);
+</pre></code>
+        <p class="fragment">You can pass different values and get different results!</p>
+        <p class="fragment">You can also have multiple arguments in a function.</p>
+        <p class="fragment">You won’t want to add more than 4 or 5 arguments to a function. This can get tedious. </p></p>
+    </section>
+
+    <section>
+        <h2>Exercise</h2>
+        <p>In JSBin, let’s create a function to calculate the area of a rectangle.</p>
+    </section>
+
+
+    <section>   
+        <h2>Arguments Review</h2>
+        <p>Functions can accept any number of named arguments:</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>                        
+function sayMyName(name) {
+    console.log('Hi, ' + name);
+}
+sayMyName('Claire');
+sayMyName('Testy McTesterFace');
+</pre></code>
+<pre class="fragment"><code class="js" data-trim contenteditable>                        
+function addNumbers(num1, num2) {
+    var result = num1 + num2;
+    console.log(result);
+}
+addNumbers(7, 21);
+addNumbers(3, 10);
+</pre></code>
+        <p>You can also pass variables:</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>                        
+var number = 10;
+addNumbers(number, 2);
+addNumbers(number, 4);
+</pre></code>
+    </section>
+
+
+
+    <section>
+        Variable Scope
+JS Variables have "function scope". They are visible in the function where they're defined:
+A variable with "local" scope:
+    function addNumbers(num1, num2) {
+      var localResult = num1 + num2;
+      console.log("The local result is: " + localResult);
+    }
+    addNumbers(5, 7);
+    console.log(localResult);
+A variable with "global" scope:
+    var globalResult;
+    function addNumbers(num1, num2) {
+      globalResult = num1 + num2;
+      console.log("The global result is: " + globalResult);
+    }
+    addNumbers(5, 7);
+    console.log(globalResult);
+    </section>
+
+    <section>
+        <h2>Exercise</h2>
+        The Fortune Teller
+
+Why pay a fortune teller when you can just program your fortune yourself?
+
+Write a function named tellFortune that:
+takes 4 arguments: number of children, partner's name, geographic location, job title.
+outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
+Call that function 3 times with 3 different values for the arguments.
+See Solution 
+</section>
+<section>
+    <h2>Exercise</h2>
+The Age Calculator
+
+Forgot how old you are? Calculate it!
+
+Write a function named calculateAge that:
+takes 2 arguments: birth year, current year.
+calculates the 2 possible ages based on those years.
+outputs the result to the screen like so: "You are either NN or NN"
+Call the function three times with different sets of values.
+Bonus: Figure out how to get the current year in JavaScript instead of passing it in.
     </section>
 
         <section style="text-align: left;">
