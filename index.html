@@ -622,7 +622,7 @@ var myMeals {
     breakfast: "eggs",
     lunch: "burger",
     dinner: "spaghetti"
-}
+};
 </code></pre>
         <p>You can an store things like details about a person.</p>
 <pre><code class="js" data-trim contenteditable>   
@@ -631,7 +631,7 @@ var profileObj = {
     city: "San Francisco",
     favoriteNumber: 47,
     favoriteFoods: ["chinese", "italian", "cajun"];
-}
+};
 </code></pre>
       </section>
 
@@ -649,7 +649,7 @@ var car = {
 	model: "mustang",
 	year: 1990,
 	features: ["radio", "seat warmers", "power windows"] 
-}
+};
 </code></pre>
       </section>
 
@@ -713,7 +713,7 @@ var cuteCats = [
     { name: "Evil", age: 14, furColor: "red" },
     { name: "Meh", age: 12, "Fur Color": "white" }
 
-]
+];
 </code></pre>
 <pre><code class="js" data-trim contenteditable> 
 cuteCats[0].name = ;//?
@@ -811,7 +811,7 @@ var dogsRule = true;
             <ul>
             <li><b>array:</b> Represents a list.</li>
 <pre><code class="js" data-trim contenteditable>
-var arr = ["laura", 47, ["cat","dog"]]l
+var arr = ["laura", 47, ["cat","dog"]];
 </code></pre>
             <li><b>object</b></li>
 <pre><code class="js" data-trim contenteditable>
@@ -872,7 +872,7 @@ if (x > 0) {
          <h2>The if and else statements</h2>
          <p>Example:</p>
 <pre><code class="js" data-trim contenteditable>            
-var answer = prompt ("What programming language is the name of a gem?");
+var answer = prompt("What programming language is the name of a gem?");
 if ( answer === "Ruby" ) {
     alert("Correct!");
 }
@@ -1031,7 +1031,7 @@ else {
             <li>null</li>
             <li>undefined</li>
         </ul>
-        <p>What will this evaluate to?</p>
+        <p style="font-size: 20px">What will this evaluate to?</p>
  <pre><code class="js" data-trim contenteditable>  
 var a = 10;
 if (a) {
@@ -1102,10 +1102,10 @@ if ( savings > 500 ) {
         <h2>Another exercise</h2>
         <p>Explain this code</p>
 <pre><code class="js" data-trim contenteditable>  
-var cupcakesSold = prompt(“How many cupcakes did you sell today?”);   
-var profitMargin = 30
+var cupcakesSold = prompt("How many cupcakes did you sell today?");   
+var profitMargin = 30;
 if (cupcakesSold < profitMargin ) {
-    alert ("Gotta sell more!");
+    alert("Gotta sell more!");
 }
 else if (cupcakesSold == profitMargin) {
     alert("Broke even!");
@@ -1150,11 +1150,11 @@ var negNum = -2;
  <tr><td>!     <td>NOT <td> <code>!(posNum === negNum)</code>  <br><br> <code> !(posNum &lt; 0) </code>
 </table>
 
-    <p>When combining together multiple conditions, use parantheses to group:</p>
+    <p style="font-size: 20px">When combining together multiple conditions, use parantheses to group:</p>
 <pre><code class="js" data-trim contenteditable> 
 var myAge = 28;
 if ((myAge &gt;= 0 && myAge &lt; 3)  || myAge &gt; 90) {
-  console.log('You\'re not quite in your peak.');
+  console.log("You're not quite in your peak.");
 }
 </pre></code>
     </section>
@@ -1180,7 +1180,7 @@ if ( age > 18 && gender === "female" ) {
         <p class="fragment">Example: You need to be near a pool OR near the beach in order to go swimming. </p>
         <p class="fragment">We use || in order to have both of the conditions met. You put one condition on either side of the ||.</p>
 <pre class="fragment"><code class="js" data-trim contenteditable> 
-var agree = prompt (“Do you agree?”);
+var agree = prompt("Do you agree?");
 if ( agree === "Yes" || agree === "Y" ) {
     alert("Welcome!");
 }
@@ -1214,7 +1214,7 @@ if (  x < 10 && y > 10 ) {
     </section>
 
     <section>   
-        <h2>If I Want To Go Out, how do i change me code?</h2>
+        <h2>Can I go out?</h2>
 <pre class="fragment"><code class="js" data-trim contenteditable> 
 var hoursOfWork = 2;
 var today = 'Friday'
@@ -1225,7 +1225,7 @@ if ( hoursOfWork >= 10 && today === 'Friday' ) {
 else if ( hoursOfWork >= 5 && today === 'Friday' ) {
   alert("I will catch up with you when I can");    
 }
-else if ( hoursOfWork ===2 && today === 'Friday' ) {
+else if ( hoursOfWork === 2 && today === 'Friday' ) {
   alert("It's Friday, let’s go!");   
 } else {
   alert("This isn't Friday. I need to stay home.");
@@ -1258,11 +1258,6 @@ else {
         <p>Create a variable named userAge and set it equal to the answer your user types into a prompt when asked how old they are. If the user is over 25 tell them that they can rent a car. If not tell them that they can’t rent a car. </p>
     </section>
 
-        <section>
-        <h2>Review Exercise</h2>
-        <p>Create a variable named userAge and set it equal to the answer your user types into a prompt when asked how old they are. If the user is over 25 tell them that they can rent a car. If not tell them that they can’t rent a car. </p>
-    </section>
-
     <section>   
         <h1>Functions</h1>
     </section>
@@ -1279,7 +1274,7 @@ else {
         <h2>Let's talk about syntax</h2>
         <p>The following is how you write a function:</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>         
-function functionName () {
+function functionName() {
 }
 </pre></code> 
         <p class="fragment">You name a function just like you name a variable. You should name a function something that makes sense in reference to what you are doing, and you need to use camel case.</p>
@@ -1291,7 +1286,7 @@ function functionName () {
         <h2>Running a Function</h2>
         <p>The code that you put in the code block is run whenever the function is activated:</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>  
-function myGreeting () {
+function myGreeting() {
     alert("Good morning!");
 }
 </pre></code> 
@@ -1382,7 +1377,7 @@ function sayHello (
 )
 </pre></code>  
  <pre class="fragment"><code class="js" data-trim contenteditable>  
-function sayHello () {
+function sayHello() {
     alert("Hello");
 }
 </pre></code>  
@@ -1397,13 +1392,13 @@ var function=sayHello() {
     <section>
             <h2>Coding Conventions: Spacing </h2>
             <p>Use newlines between statements and use spaces to show blocks.</p>
-            <p>Bad:</p>
+            <p class="fragment">Bad:</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>  
-function addNumbers(num1,num2) {return num1 + num2;}
+function addNumbers() {return num1 + num2;}
 </pre></code>  
-            <p>Good:</p>
+            <p class="fragment">Good:</p>
  <pre class="fragment"><code class="js" data-trim contenteditable>  
-function addNumbers(num1, num2) {
+function addNumbers() {
     return num1 + num2;
 }
 </pre></code>  
@@ -1417,10 +1412,10 @@ function addNumbers(num1, num2) {
 
     <section>
         <h2>Getting information from a function</h2>
-        <p>Functions don't just run JavaScript statements. They can also return values that you can use elsewhere in a program.</p>
+        <p class="fragment">Functions don't just run JavaScript statements. They can also return values that you can use elsewhere in a program.</p>
         <p class="fragment">Functions can also give something back when they finish. This is called returning a value.</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>  
-function goToCoffeeShop () {
+function goToCoffeeShop() {
     return "Espresso is on the way";
 }
 </pre></code> 
@@ -1438,7 +1433,7 @@ function goToCoffeeShop () {
 
     <section>
         <h2>Return Values</h2>
-        <p>The return keyword returns a value to whoever calls the function (and exits the function):</p>
+        <p class="fragment">The return keyword returns a value to whoever calls the function (and exits the function):</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>          
 function addNumbers(num1, num2) {
     var result = num1 + num2;
@@ -1446,11 +1441,11 @@ function addNumbers(num1, num2) {
 }
 var sum = addNumbers(5, 2);
 </pre></code>
-        <p> You can use function calls in expressions:</p>
+        <p class="fragment"> You can use function calls in expressions:</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>          
 var biggerSum = addNumbers(2, 5) + addNumbers(3, 2);
 </pre></code>
-        <p>  You can even call functions inside function calls:</p>
+        <p class="fragment">  You can even call functions inside function calls:</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>          
 var hugeSum = addNumbers(addNumbers(5, 2), addNumbers(3, 7));
 </pre></code>
@@ -1484,26 +1479,26 @@ var year = new Date().getFullYear();
 
     <section>
         <h2>Sending information to a function</h2>
-        <p>You can give information to a function to change how it works.</p>
-        <p>Coffee shop example</p>
-        <p>JavaScript functions can also accept information called an argument, which you send to the function.</p>
-        <p>The argument is stored in a variable called a parameter that you can use inside the function.</p>
+        <p class="fragment">You can give information to a function to change how it works.</p>
+        <p class="fragment">Coffee shop example</p>
+        <p class="fragment">JavaScript functions can also accept information called an argument, which you send to the function.</p>
+        <p class="fragment">The argument is stored in a variable called a parameter that you can use inside the function.</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>                 
 function myFunction (parameter) {
     //code block
 }
 </pre></code>
-        <p> Parameters act a lot like variables. </p>
+        <p class="fragment"> Parameters act a lot like variables. </p>
     </section>
 
     <section>
         <h2>Parameters and arguments</h2>
         <p class="fragment">Passing an argument to a function</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>                 
-function goToTheCoffeeShop (drink) {
+function goToTheCoffeeShop(drink) {
     alert(drink + " is on the way!");
 }
-goToTheCoffeeShop ("Espresso");
+goToTheCoffeeShop("Espresso");
 </pre></code>
     <p class="fragment">You can pass different values and get different results!</p>
     <p class="fragment">You can also have multiple arguments in a function.</p>
@@ -1513,10 +1508,10 @@ goToTheCoffeeShop ("Espresso");
         <h2>Multiple Arguments</h2>
         <p>In our example, let’s say I also want something to eat.</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>                        
-function goToTheCoffeeShop (drink, pastry) {
+function goToTheCoffeeShop(drink, pastry) {
     alert(drink + "and "+ pastry + " are on the way!");
 }
-goToTheCoffeeShop ("Espresso", "scone");
+goToTheCoffeeShop("Espresso", "scone");
 </pre></code>
         <p class="fragment">You can pass different values and get different results!</p>
         <p class="fragment">You can also have multiple arguments in a function.</p>
@@ -1527,7 +1522,6 @@ goToTheCoffeeShop ("Espresso", "scone");
         <h2>Exercise</h2>
         <p>In JSBin, let’s create a function to calculate the area of a rectangle.</p>
     </section>
-
 
     <section>   
         <h2>Arguments Review</h2>
@@ -1547,7 +1541,7 @@ function addNumbers(num1, num2) {
 addNumbers(7, 21);
 addNumbers(3, 10);
 </pre></code>
-        <p>You can also pass variables:</p>
+        <p class="fragment">You can also pass variables:</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>                        
 var number = 10;
 addNumbers(number, 2);
@@ -1555,11 +1549,94 @@ addNumbers(number, 4);
 </pre></code>
     </section>
 
+    <section>
+        <h2>Fun with Functions</h2>
+<pre class="fragment"><code class="js" data-trim contenteditable>                               
+var nameImprover = function(name, adj) {
+    return 'Col ' + name + ' Mc' + adj + ' pants';
+};
+</pre></code>
+    </section>
 
+    <section>
+        <h2>Return/Side Effects</h2>
+<pre class="fragment"><code class="js" data-trim contenteditable>                         
+var nameImprover = function(name, adj) {
+	return 'Col ' + name + ' Mc' + adj + ' pants';
+};	
+
+var nameLogger = function(name, adj) {
+	var newName = 'Col ' + name + ' Mc' + adj + ' pants';
+	console.log(newName); 
+};
+</pre></code>
+    </section>
+
+    <section>
+        <h2>Arguments Keyword</h2>
+<pre class="fragment"><code class="js" data-trim contenteditable>                                 
+var addTwo = function(a, b) {
+	console.log(arguments); // logs [3,10]
+	return a + b; 
+};
+
+addTwo(3, 10); // 13
+</pre></code>
+    </section>
+
+    <section>
+        <h2>More on Variables</h2>
+        <p class="fragment">As you create more complex programs, you'll end up adding multiple functions to your scripts.</p>
+        <p class="fragment">It's possible, even likely, that a function defines and uses the same name as a variable used elsewhere in your script.</p>
+        <p class="fragment">Example: </p>
+        <p class="fragment">You might write some JavaScript with a variable named “width”, but also have a function named computeArea that also has a width variable inside it.</p>
+    </section>
+
+    <section>
+        <h2>Javascript can handle it!</h2>
+        <p class="fragment">JavaScript can handle this!</p>
+        <p class="fragment">Each function acts like its own individual universe and the variables that are created within that universe don't interact with the variables created in another universe or another function.</p>
+        <img class="fragment" src="images/stars.png" alt="">
+    </section>
 
     <section>
         <h2>Variable Scope</h2>
-        <p>JS Variables have "function scope". They are visible in the function where they're defined:</p>
+<pre class="fragment"><code class="js" data-trim contenteditable> 
+function greeting() {
+    var person= "Lilah";
+    alert(person);
+}
+
+var person = "George";
+greeting();
+alert(person);
+</pre></code>
+    <img class="fragment" src="images/alerts.png" alt="">
+    </section>
+
+    <section>
+        <h2>GLobal vs Local</h2>
+        <img src="images/global.png" alt="">
+    </section>
+
+    <section>
+        <h2>GLobal vs Local</h2>
+        <p class="fragment">LOCAL: A variable declared in a function only lives inside that function and can't be accessed or changed outside of that function.</p>
+        <p class="fragment">GLOBAL: Any variables you create in a script that aren't contained in a function are in this bigger universe called the global scope.</p>
+        <p class="fragment">**All functions can access the global scope.</p>
+        <p class="fragment">The word “scope” refers to where a variable is visible and accessible.</p>
+    </section>
+
+    <section>
+        <h2>Things to remember</h2>
+        <p class="fragment">1.  Always use the var keyword when creating a variable inside a function.</p>
+        <p class="fragment">If you don't, your function is reaching out to the global scope and might override another variable with the same name.</p>
+        <p class="fragment">2. It’s okay to use the same variable name inside of functions.</p>
+        <p class="fragment">As long as you use the var keyword to create the variable, the variable will only exist inside that function.</p>
+    </section>
+
+    <section>
+        <h2>Variable Scope</h2>
         <p>A variable with "local" scope:</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>                        
 function addNumbers(num1, num2) {
@@ -1607,6 +1684,73 @@ console.log(globalResult);
         <li>Call the function three times with different sets of values.</li>
         <li>Bonus: Figure out how to get the current year in JavaScript instead of passing it in.</li>
     </ul>
+        </section>
+
+
+        <section> 
+            <h2>Review</h2>
+<pre class="fragment"><code class="js" data-trim contenteditable>                        
+var divideByThree = function(number) {
+    var val = number / 3;
+    console.log(val);
+};
+</pre></code>
+        <p class="fragment">How would you call this function so that 3 is logged to the console?</p>
+        </section>
+
+        <section> 
+            <h2>Review</h2>
+<pre class="fragment"><code class="js" data-trim contenteditable>                        
+var greeting = function(name) {
+    console.log("Great to see you," + " " + name);
+};
+</pre></code>
+        <p class="fragment">How would you call this function so that “Great to see you, Grace Hopper” is logged to the console?</p>
+        </section>
+
+        <section> 
+            <h2>Review</h2>
+<pre class="fragment"><code class="js" data-trim contenteditable>                        
+var foodDemand = function(food) {
+    console.log("I want to eat" + " " + food);
+};
+</pre></code>
+        <p class="fragment">How would you call this function so that “I want to eat Chinese food” is logged to the console?</p>
+        </section>
+
+        <section> 
+            <h2>Review</h2>
+<pre class="fragment"><code class="js" data-trim contenteditable>                        
+var coffeeCost = function(cost) {
+    var total = cost * 5;
+    console.log(total);
+}
+</pre></code>
+        <p class="fragment">Jessica drinks five coffees a day. How would you call this function if the cost of her coffee is $3?</p>
+        </section>
+
+        <section>
+            <h2>Review</h2>
+            <p>Given the code below, what appears in the alert dialogue when this program runs?</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>                        
+var name = "Trish";
+function setName() {
+  var name = "Sarah";
+}
+setName();
+alert(name);
+</pre></code>
+        </section>
+
+        <section>
+            <h2>Review</h2>
+            <p>Functons and Conditional Statements</p>
+            <ul>
+                <li class="fragment">Write a function named greaterNum that:</li>
+                <li class="fragment">Takes 2 arguments, both numbers.</li>
+                <li class="fragment">Returns whichever number is the greater (higher) number.</li>
+                <li class="fragment">Call that function 2 times with different number pairs, and log the output to make sure it works (e.g. "The greater number of 5 and 10 is 10.").</li>
+            </ul>
         </section>
 
         <section style="text-align: left;">
