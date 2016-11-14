@@ -317,9 +317,9 @@ var name = "Laura";
             <p>Variables can also store the result of any "expression":</p>
 <pre><code class="js" data-trim contenteditable> 
 var name = 'Gaga';
-var greeting = 'Hello ' + name;
 var title = 'Lady';
-var formalGreeting = greeting + ', ' + title;
+var greeting = 'Hello ' + title;
+var formalGreeting = greeting + ', ' + name;
 </code></pre>
         </section>
 
@@ -336,7 +336,7 @@ prompt("What is your favorite food?");
         <section>
             <h2>Prompt command</h2>
             <p>What is a way that we have learned to store the information for what the user types in?</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>            
+<pre class="fragment"><code class="js" data-trim contenteditable>         
 var name = prompt("What is your name?");
 console.log(name);
 </code></pre>
@@ -809,6 +809,14 @@ var dogsRule = true;
         <section>
             <h2>Review: Primitive Data Types</h2>
             <ul>
+            <li><b>array:</b> Represents a list.</li>
+<pre><code class="js" data-trim contenteditable>
+var arr = ["laura", 47, ["cat","dog"]]l
+</code></pre>
+            <li><b>object</b></li>
+<pre><code class="js" data-trim contenteditable>
+var goodPickupLines = {};
+</code></pre>
             <li><b>undefined:</b> Represents a value that hasn't been defined.</li>
 <pre><code class="js" data-trim contenteditable>
 var notDefinedYet;
@@ -864,13 +872,13 @@ if (x > 0) {
          <h2>The if and else statements</h2>
          <p>Example:</p>
 <pre><code class="js" data-trim contenteditable>            
-var answer = prompt (“What programming language is the name of a gem?”);
-if ( answer === “Ruby” ) {
-    alert(“Correct!”);
+var answer = prompt ("What programming language is the name of a gem?");
+if ( answer === "Ruby" ) {
+    alert("Correct!");
 }
 //If you want an option for if the person gets it wrong
 else {
-    alert(“That’s not right!”);
+    alert("That’s not right!");
 }
 //only one message will appear 
 </code></pre>
@@ -887,8 +895,8 @@ else {
         <p>In the earlier JavaScript we wrote, write “ruby” instead of “Ruby”. Do you get the right answer?</p>
         <p class="fragment">A solution</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>         
-if ( answer.toUpperCase() === “RUBY” ) {
-    alert(“Correct!”);
+if ( answer.toUpperCase() === "RUBY" ) {
+    alert("Correct!");
 }
 </code></pre>
         <p class="fragment">This will make the answer that your user gives correct, no matter the case!</p>
@@ -1003,17 +1011,38 @@ if ( answer.toUpperCase() === “RUBY” ) {
         <p>You can use a boolean (true or false) as a condition in your if/else statements. </p>
 <pre><code class="js" data-trim contenteditable>  
 if ( true ) {
-    document.write(“This is Correct!”);
+    document.write("This is Correct!");
 }
 else {
-    document.write(“This is Incorrect!”);
+    document.write("This is Incorrect!");
 }
 </code></pre>
     </section>
 
     <section>
+        <h2>Truthy and Falsey</h2>
+        <p>"Falsey Values": these will evaluate to false if they are in the conditional statement</p>
+        <ul>
+            <li>0</li>
+            <li>-0</li>
+            <li>NaN</li>
+            <li>" "</li>
+            <li>false</li>
+            <li>null</li>
+            <li>undefined</li>
+        </ul>
+        <p>What will this evaluate to?</p>
+ <pre><code class="js" data-trim contenteditable>  
+var a = 10;
+if (a) {
+    //code block
+}   
+</code></pre>    
+    </section>
+
+    <section>
         <h2>Programming Multiple Outputs</h2>
-        <p>Often times, we have more that one inputs or conditions, and therefore, will need more outputs.</p>
+        <p>Often times, we have more that one input or condition, and therefore, will need more outputs.</p>
         <p>Example: If it is sunny and warm, you can go to the beach. But if it is warm and raining, you will probably stay in.</p>
         <img src="images/ifelse.png" alt="">     
     </section>
@@ -1021,16 +1050,16 @@ else {
     <section>
         <p>No limit to the number of else if statements that you can have in your code!</p>
 <pre><code class="js" data-trim contenteditable>  
-var isTeacher = prompt(“Are you a teacher?”);
-var isStudent = prompt(“Are you a student?”);
-if ( isTeacher.toUpperCase === “YES” ) {
+var isTeacher = prompt("Are you a teacher?");
+var isStudent = prompt("Are you a student?");
+if ( isTeacher.toUpperCase === "YES" ) {
     alert('Welcome Teacher');
 }
-else if (isStudent.toUpperCase === “YES”) {
-    alert('Welcome student');
+else if (isStudent.toUpperCase === "YES") {
+    alert("Welcome student");
 }
 else {
-  alert ("Who are you?”);
+  alert ("Who are you?");
 }
 </code></pre>
     </section>
@@ -1073,16 +1102,16 @@ if ( savings > 500 ) {
         <h2>Another exercise</h2>
         <p>Explain this code</p>
 <pre><code class="js" data-trim contenteditable>  
-var cupcakesSold = prompt (“How many cupcakes did you sell today?”);   
+var cupcakesSold = prompt(“How many cupcakes did you sell today?”);   
 var profitMargin = 30
 if (cupcakesSold < profitMargin ) {
-    alert (“Gotta sell more!”);
+    alert ("Gotta sell more!");
 }
-else if (cupcakesSold = profitMargin) {
-    alert(“Broke even!”);
+else if (cupcakesSold == profitMargin) {
+    alert("Broke even!");
 }
 else {
-    alert(“We are doing well!!!”);
+    alert("We are doing well!!!");
 }
 </code></pre>       
     </section>
@@ -1097,10 +1126,10 @@ var quantity = 47;
 var salesTotal= retailPrice * quantity;
 var profit= salesTotal-(wholesalePrice * quantity);
 if (profit > 400 ) {
-    document.write (“Time to go home”);
+    document.write("Time to go home");
 }
 else {
-    document.write (“Keep working”);
+    document.write("Keep working");
 } 
 </code></pre>       
     </section>
@@ -1138,9 +1167,9 @@ if ((myAge &gt;= 0 && myAge &lt; 3)  || myAge &gt; 90) {
         <p class="fragment">You can have more than one set of &&</p>
 <pre class="fragment"><code class="js" data-trim contenteditable> 
 var age = 30;
-var gender= “female”;
-if ( age > 18 && gender === “female” ) {
-    alert(“Welcome!”);
+var gender= "female";
+if ( age > 18 && gender === "female" ) {
+    alert("Welcome!");
 }
 </pre></code>
     </section>
@@ -1152,8 +1181,8 @@ if ( age > 18 && gender === “female” ) {
         <p class="fragment">We use || in order to have both of the conditions met. You put one condition on either side of the ||.</p>
 <pre class="fragment"><code class="js" data-trim contenteditable> 
 var agree = prompt (“Do you agree?”);
-if ( agree === “Yes” || agree === “Y” ) {
-    alert(“Welcome!”);
+if ( agree === "Yes" || agree === "Y" ) {
+    alert("Welcome!");
 }
 </pre></code>       
     </section>
@@ -1161,7 +1190,7 @@ if ( agree === “Yes” || agree === “Y” ) {
     <section>   
         <h2>What will appear in the browsers console?</h2>
 <pre class="fragment"><code class="js" data-trim contenteditable> 
-        var ships = 10;
+var ships = 10;
 var score = 0;
 if (  ships === 0 || score === 0 ) {
   console.log('Game over.');
@@ -1191,13 +1220,13 @@ var hoursOfWork = 2;
 var today = 'Friday'
 
 if ( hoursOfWork >= 10 && today === 'Friday' ) {
-  alert(“Too much work! I can’t go out”);    
+  alert("Too much work! I can’t go out");    
 } 
 else if ( hoursOfWork >= 5 && today === 'Friday' ) {
-  alert(“I will catch up with you when I can");    
+  alert("I will catch up with you when I can");    
 }
 else if ( hoursOfWork ===2 && today === 'Friday' ) {
-  alert("It's Friday, let’s go!”);   
+  alert("It's Friday, let’s go!");   
 } else {
   alert("This isn't Friday. I need to stay home.");
 }
@@ -1213,27 +1242,25 @@ else if ( hoursOfWork ===2 && today === 'Friday' ) {
             <li class="fragment">Otherwise, the user should get an alert that says “No bus for you”</li>
         </ul>
         <aside class="notes">
-var busRunning = prompt(“Is the bus running today?”);
-var clipperCard= prompt(“How much money is on your Clipper card?”);
-if (busRunning.toUpperCase() === “YES” && clipperCard >= 5 ) {
-alert (“You can take the bus!”)
+var busRunning = prompt("Is the bus running today?");
+var clipperCard= prompt("How much money is on your Clipper card?");
+if (busRunning.toUpperCase() === "YES" && clipperCard >= 5 ) {
+    alert ("You can take the bus!")
 }
 else {
-alert(“No bus for you”);
+    alert("No bus for you");
 }
         </aside>
     </section>
 
     <section>
         <h2>Review Exercise</h2>
-        <p>Create a variable named userAge and set it equal to the answer your user types into a prompt when asked how old they are. 
-If the user is over 25 tell them that they can rent a car. If not tell them that they can’t rent a car. </p>
+        <p>Create a variable named userAge and set it equal to the answer your user types into a prompt when asked how old they are. If the user is over 25 tell them that they can rent a car. If not tell them that they can’t rent a car. </p>
     </section>
 
         <section>
         <h2>Review Exercise</h2>
-        <p>Create a variable named userAge and set it equal to the answer your user types into a prompt when asked how old they are. 
-If the user is over 25 tell them that they can rent a car. If not tell them that they can’t rent a car. </p>
+        <p>Create a variable named userAge and set it equal to the answer your user types into a prompt when asked how old they are. If the user is over 25 tell them that they can rent a car. If not tell them that they can’t rent a car. </p>
     </section>
 
     <section>   
@@ -1265,7 +1292,7 @@ function functionName () {
         <p>The code that you put in the code block is run whenever the function is activated:</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>  
 function myGreeting () {
-    alert(“Good morning!”);
+    alert("Good morning!");
 }
 </pre></code> 
         <p class="fragment">To activate our code block, we need to call the function. You do it like this:</p>
@@ -1346,22 +1373,22 @@ var alertRandom = function () {
         <p>Which of the following code snippets correctly shows how to create a function named sayHello which opens an alert dialog with the string "Hello" in it?</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>  
 function sayHello {
-    alert(“Hello”);
+    alert("Hello");
 }
 </pre></code>   
  <pre class="fragment"><code class="js" data-trim contenteditable>  
 function sayHello (
-    alert(“Hello”);
+    alert("Hello");
 )
 </pre></code>  
  <pre class="fragment"><code class="js" data-trim contenteditable>  
 function sayHello () {
-    alert(“Hello”);
+    alert("Hello");
 }
 </pre></code>  
  <pre class="fragment"><code class="js" data-trim contenteditable>  
 var function=sayHello() {
-    alert(“Hello”);
+    alert("Hello");
 }
 </pre></code>  
         </ol>
@@ -1394,7 +1421,7 @@ function addNumbers(num1, num2) {
         <p class="fragment">Functions can also give something back when they finish. This is called returning a value.</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>  
 function goToCoffeeShop () {
-    return “Espresso is on the way”;
+    return "Espresso is on the way";
 }
 </pre></code> 
         <p class="fragment">The value that's returned by the function can then be used in your program.</p>
@@ -1474,9 +1501,9 @@ function myFunction (parameter) {
         <p class="fragment">Passing an argument to a function</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>                 
 function goToTheCoffeeShop (drink) {
-    alert(drink + “ is on the way!”)”
+    alert(drink + " is on the way!");
 }
-goToTheCoffeeShop (“Espresso”);
+goToTheCoffeeShop ("Espresso");
 </pre></code>
     <p class="fragment">You can pass different values and get different results!</p>
     <p class="fragment">You can also have multiple arguments in a function.</p>
@@ -1487,9 +1514,9 @@ goToTheCoffeeShop (“Espresso”);
         <p>In our example, let’s say I also want something to eat.</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>                        
 function goToTheCoffeeShop (drink, pastry) {
-    alert(drink + “and ”+ pastry + “ are on the way!”)”
+    alert(drink + "and "+ pastry + " are on the way!");
 }
-goToTheCoffeeShop (“Espresso”, “scone”);
+goToTheCoffeeShop ("Espresso", "scone");
 </pre></code>
         <p class="fragment">You can pass different values and get different results!</p>
         <p class="fragment">You can also have multiple arguments in a function.</p>
@@ -1531,50 +1558,56 @@ addNumbers(number, 4);
 
 
     <section>
-        Variable Scope
-JS Variables have "function scope". They are visible in the function where they're defined:
-A variable with "local" scope:
-    function addNumbers(num1, num2) {
-      var localResult = num1 + num2;
-      console.log("The local result is: " + localResult);
-    }
-    addNumbers(5, 7);
-    console.log(localResult);
-A variable with "global" scope:
-    var globalResult;
-    function addNumbers(num1, num2) {
-      globalResult = num1 + num2;
-      console.log("The global result is: " + globalResult);
-    }
-    addNumbers(5, 7);
-    console.log(globalResult);
+        <h2>Variable Scope</h2>
+        <p>JS Variables have "function scope". They are visible in the function where they're defined:</p>
+        <p>A variable with "local" scope:</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>                        
+function addNumbers(num1, num2) {
+    var localResult = num1 + num2;
+    console.log("The local result is: " + localResult);
+}
+addNumbers(5, 7);
+console.log(localResult);
+</pre></code>
+    </section>
+
+    <section>
+        <h2>Variable scope</h2>
+        <p>A variable with "global" scope:</p>
+<pre class="fragment"><code class="js" data-trim contenteditable>                        
+var globalResult;
+function addNumbers(num1, num2) {
+    globalResult = num1 + num2;
+    console.log("The global result is: " + globalResult);
+}
+addNumbers(5, 7);
+console.log(globalResult);
+</pre></code>
     </section>
 
     <section>
         <h2>Exercise</h2>
-        The Fortune Teller
-
-Why pay a fortune teller when you can just program your fortune yourself?
-
-Write a function named tellFortune that:
-takes 4 arguments: number of children, partner's name, geographic location, job title.
-outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
-Call that function 3 times with 3 different values for the arguments.
-See Solution 
+        <p>The Fortune Teller</p>
+        <p>Why pay a fortune teller when you can just program your fortune yourself?</p>
+        <ul>
+            <li>Write a function named tellFortune that:</li>
+            <li>Outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."</li>
+            <li>Call that function 3 times with 3 different values for the arguments.</li>
+        </ul>
 </section>
 <section>
     <h2>Exercise</h2>
-The Age Calculator
-
-Forgot how old you are? Calculate it!
-
-Write a function named calculateAge that:
-takes 2 arguments: birth year, current year.
-calculates the 2 possible ages based on those years.
-outputs the result to the screen like so: "You are either NN or NN"
-Call the function three times with different sets of values.
-Bonus: Figure out how to get the current year in JavaScript instead of passing it in.
-    </section>
+    <p>The Age Calculator</p>
+    <p>Forgot how old you are? Calculate it!</p>
+    <ul>
+        <li>Write a function named calculateAge that:</li>
+        <li>Takes 2 arguments: birth year, current year.</li>
+        <li>Calculates the 2 possible ages based on those years.</li>
+        <li>Outputs the result to the screen like so: "You are either NN or NN"</li>
+        <li>Call the function three times with different sets of values.</li>
+        <li>Bonus: Figure out how to get the current year in JavaScript instead of passing it in.</li>
+    </ul>
+        </section>
 
         <section style="text-align: left;">
             <h1>THE END</h1>
