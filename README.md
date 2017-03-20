@@ -21,8 +21,8 @@ Welcome to JavaScript! The only functional programming language in the browser. 
 3) Codecademy and FreeCodeCamp JS lessons
 
 # Exercises
-1) DataAndFunction.js file in Dropbox
-2) Coding Dojo
+1) DataAndFunction.js file in Exercises
+2) <a href="http://algorithm.codingdojo.com/">Coding Dojo Algorithms</a>
 
   
  ### For contributors
