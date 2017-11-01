@@ -630,7 +630,7 @@ var profileObj = {
     name: "Laura",
     city: "San Francisco",
     favoriteNumber: 47,
-    favoriteFoods: ["chinese", "italian", "cajun"];
+    favoriteFoods: ["chinese", "italian", "cajun"]
 };
 </code></pre>
       </section>
@@ -1052,10 +1052,10 @@ if (a) {
 <pre><code class="js" data-trim contenteditable>  
 var isTeacher = prompt("Are you a teacher?");
 var isStudent = prompt("Are you a student?");
-if ( isTeacher.toUpperCase === "YES" ) {
-    alert('Welcome Teacher');
+if ( isTeacher.toUpperCase() === "YES" ) {
+    alert("Welcome Teacher");
 }
-else if (isStudent.toUpperCase === "YES") {
+else if (isStudent.toUpperCase() === "YES") {
     alert("Welcome student");
 }
 else {
@@ -1102,7 +1102,7 @@ if ( savings > 500 ) {
         <h2>Another exercise</h2>
         <p>Explain this code</p>
 <pre><code class="js" data-trim contenteditable>  
-var cupcakesSold = prompt("How many cupcakes did you sell today?");   
+var cupcakesSold = parseInt(prompt("How many cupcakes did you sell today?"));   
 var profitMargin = 30;
 if (cupcakesSold < profitMargin ) {
     alert("Gotta sell more!");
@@ -1237,18 +1237,18 @@ else if ( hoursOfWork === 2 && today === 'Friday' ) {
         <h2>Review Exercise</h2>
         <ul>
             <li class="fragment">Create a variable named busRunning and ask the user if the bus is running today.</li>
-            <li class="fragment">Create a second variable named clipperCard and ask the user how much money they have on their Clipper card.</li>
-            <li class="fragment">Create a conditional statement that says if the bus is running AND the user has more than or equal to 5 on their Clipper card, the program gives them an alert that says “You can take the bus!”</li>
-            <li class="fragment">Otherwise, the user should get an alert that says “No bus for you”</li>
+            <li class="fragment">Create a second variable named passengerNum and ask the user how many passengers are currently on the bus.</li>
+            <li class="fragment">Create a conditional statement that says if the bus is running AND the bus has less than or equal to 75 passengers, the program gives them an alert that says “You can take the bus!”</li>
+            <li class="fragment">Otherwise, the user should get an alert that says “You will have to wait.”</li>
         </ul>
         <aside class="notes">
 var busRunning = prompt("Is the bus running today?");
-var clipperCard= prompt("How much money is on your Clipper card?");
-if (busRunning.toUpperCase() === "YES" && clipperCard >= 5 ) {
+var passengerNum = prompt("How many passengers are on the bus?");
+if (busRunning.toUpperCase() === "YES" && passengerNum >= 5 ) {
     alert ("You can take the bus!")
 }
 else {
-    alert("No bus for you");
+    alert("You will have to wait.");
 }
         </aside>
     </section>
