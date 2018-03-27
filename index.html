@@ -49,6 +49,16 @@
         <!--/Intro Slides-->
 
         <section>
+            <h2>What have we learned so far?</h2>
+            <ul>
+                <li class="fragment">HTML5 - a Markup Language</li>
+                <li class="fragment">CSS3 - Web-based Technology</li>
+            </ul>
+            <p class="fragment">How is JavaScript different?</p>
+            <img src="images/question.gif" alt="Question Mark Gif" width="200px" class="fragment">
+        </section>
+
+        <section>
             <h2>JS Introduction</h2>
             <p class="fragment"> JavaScript is a programming language that drives the web: from front-end user interface design, to backend server-side programming, you'll find JavaScript at every stage of a web site and web application.</p>
             <p class="fragment">It is used on nearly every web site in the world.</p>
@@ -56,23 +66,47 @@
         </section>
 
         <section>
+            <h2>What is Javascript?</h2>
+            <p>JavaScript is used to make dynamic webpages interactive</p>
+            <p>Read more <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript">here</a></p>
+        </section>
+
+        <section>
             <h2>What can JS do?</h2>
             <ul>
-                <li>Image switchers and lightboxes</li>
-                <li>Full featured web applications</li>
-                <li>Keep track of users with cookies </li>
-                <li>Interactive elements like tabs, sliders and accordions</li>
-                <li>Drawing and animation</li>
+                <li class="fragment">Interactive image galleries</li>
+                <li class="fragment">Full featured web applications</li>
+                <li class="fragment">Keep track of users with cookies </li>
+                <li class="fragment">Interactive elements like tabs, sliders and accordions</li>
+                <li class="fragment">Drawing and animation</li>
+                <li class="fragment">Send and receive data</li>
         </section>
 
         <section>
-            <img src="images/jstips-header-blog.gif" alt="">
+            <img src="images/jstips-header-blog.gif" alt="JS at Work">
         </section>
 
         <section>
-            <h2>Full-Stack JS</h2>
-            <p>JavaScript isn't just limited to the web browser. It turns out that JavaScript can even be used on web servers.</p>
-            <p>Node.JS is a popular choice for server side development. It's a favorite of big companies like Wal-Mart, PayPal, LinkedIn, Netflix and Groupon.</p>
+            <img src="https://d2v4zi8pl64nxt.cloudfront.net/javascript-seo/5948abfc0e2df5.02876591.gif" alt="Lego Gif">
+        </section>
+
+        <section>
+            <h2>JS Properties</h2>
+            <p>Like other languages in computer science, JavaScript has the following tools that we will cover:</p>
+            <ul>
+                <li class="fragment">Data Types</li>
+                <li class="fragment">Functions</li>
+                <li class="fragment">Loops</li>
+                <li class="fragment">Conditional Statements</li>
+                <li class="fragment">Object-Oriented Programming</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Where does JavaScript live?</h2>
+            <p>For front-end project, JS, like HTML and CSS, is run in the browser.</p>
+            <p>Other tools in the browsers (like APIs, that we will cover later) help make JS run wonderfully!</p>
+            <img src="images/browsers.png" alt="List of JS Engines">
         </section>
 
         <section>
@@ -85,7 +119,7 @@
 
         <section>
             <h2>REMINDER! (ON JAVA)</h2>
-            <p>Remember! ‘Java’ is not the same thing as ‘Javascript’. They are two different languages. We will be learning Javascript.</p>
+            <p>Remember! ‘Java’ is not the same thing as ‘JavaScript’. They are two different languages. We will be learning JavaScript.</p>
         </section>
 
         <section>
@@ -117,7 +151,7 @@
 
         <section>
             <h2>Quick Review 4</h2>
-            <p style="color:yellow">Javascript and Java are the same programming language.</p>
+            <p style="color:yellow">JavaScript and Java are the same programming language.</p>
             <ul>
                 <li>True</li>
                 <li>False</li>
@@ -828,943 +862,35 @@ var goodPickupLines = null;
             </ul>
         </section>
 
-        <section>   
-            <h2>Conditional Statements</h2>
-            <p class="fragment">Conditionals allow you to use a users input to change the results of a program or statement.</p>
-            <p class="fragment">All conditions, no matter how complex, can and must be broken down to yes or no, true or false.</p>
-            <p class="fragment">Example: If your user destroys all 10 alien spaceships in your game, your program will allow them to move on to the next level.</p>
+        <section>
+            <h2>A Note on JavaScript</h2>
+            <p>It is always changing....</p>
+            <img src="https://media1.tenor.com/images/ff04fe6c38d02e0848cdb1248a4143dc/tenor.gif" alt="Butterfly into Flower">
         </section>
 
         <section>
-            <h2>In pictures</h2>
-            <img src="images/if-statement.png" alt="Control Flow">
-        </section>
-
-        <section>
-            <h2>Conditional Statements</h2>
-            <p>A very simple conditional statement: (the one we will start with) is <span style="color:yellow">If something is true, then do this</span>. </p> 
-<pre><code class="js" data-trim contenteditable>
-if ( the condition ) {
-//the code that runs if the condition is true, called a code block
-}   
-</code></pre>
-        </section>
-
-        <section>
-            <h2>Note!</h2>
-            <p>There is no semi-colon at the end of the statement.</p>
-        </section>
-
-        <section>
-            <h2>The if statement</h2>
-            <p>Use <code>if</code> to tell JS which statements to execute, based on a condition.</p>
-<pre><code class="js" data-trim contenteditable>
-var x = 5;
-
-if (x > 0) {
-  console.log('x is a positive number!');
-}
-</code></pre>
-            <p>An 'if' statement tests a condition to see if it is true. If the condition is true, the code inside the 'if' statement is run. Since the value of 'x' is 5, and 5 is greater than 0, the condition is evaluated as true and the code inside our 'if' statement is executed. </p>
-     </section>
-
-     <section>
-          <h2>The if and else statements</h2>
-          <img src="images/diagram.png" alt="">
-     </section>
-
-     <section>
-         <h2>in pictures</h2>
-         <img src="images/if-else.png" alt="">
-     </section>
-
-     <section>
-         <h2>The if and else statements</h2>
-         <p>Example:</p>
-<pre><code class="js" data-trim contenteditable>            
-var answer = prompt("What programming language is the name of a gem?");
-if ( answer === "Ruby" ) {
-    alert("Correct!");
-}
-//If you want an option for if the person gets it wrong
-else {
-    alert("That’s not right!");
-}
-//only one message will appear 
-</code></pre>
-     </section>
-
-     <section>
-         <h2>Why so many equal signs?</h2>
-         <p>Three equal signs is an equality operator. </p>
-         <p>It's used to test if two values are exactly the same. If they are the same, then the condition is true and the code inside the braces runs.</p>
-     </section>
-    
-    <section>
-        <h2>Exact equivalence</h2>
-        <p>In the earlier JavaScript we wrote, write “ruby” instead of “Ruby”. Do you get the right answer?</p>
-        <p class="fragment">A solution</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>         
-if ( answer.toUpperCase() === "RUBY" ) {
-    alert("Correct!");
-}
-</code></pre>
-        <p class="fragment">This will make the answer that your user gives correct, no matter the case!</p>
-    </section>
-
-    <section>   
-        <h2>Exercise</h2>
-        <ul>
-            <li>Create a variable called favoriteFood and give it the value of prompt(“What is your favorite food?”).</li>
-            <li>Create a conditional statement so that if the user answers your favorite food, they get an alert that says “Mine too!”. If they don’t, they get an alert that says “Ewwww”. </li>
-            <li>Make sure that the user can enter their answer in any capital letters or non-capital letters</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>More on operators</h2>
-        <p style="font-size: 30px">Use these operators to compare two values for equality, inequality, or difference.</p>
-<pre><code class="js" data-trim contenteditable>  
-  var myAge = 28;
-</code></pre>
-<table border="1" cellspacing="5" cellpadding="5" style="font-size: 16px; line-height: 1em;">
-  <thead>
-  <tr><td>Operator  <td>Meaning <td>True expressions
-  <tbody>
-  <tr><td>==    <td>Equality <td><code>myAge == 28</code> <br> <code>myAge == '28'</code> <br> <code>28 == '28'</code>
-  <tr><td>===  <td>Strict equality <td><code>myAge === 28</code>     
-  <tr><td>!=     <td>Inequality <td><code>myAge != 29</code>      
-  <tr><td>!==   <td>Strict inequality <td><code>myAge != '28'</code> <br> <code>28 != '28'</code>
-  <tr><td>&gt;  <td>Greater than <td><code>myAge &gt; 25</code> <br> <code>'28' &gt; 25</code>   
-  <tr><td>&gt;=<td>Greater than or equal <td><code>myAge &gt;= 28</code> <br> <code>'28' &gt;= 25</code>
-  <tr><td>&lt;   <td>Less than <td><code>myAge &lt; 30</code>  <br> <code>'28' &lt; 30</code>
-  <tr><td>&lt;= <td>Less than or equal <td><code>myAge &lt;= 28</code>  <br> <code>'28' &lt;= 28 </code>
-</table>
-
-            <p><b>Common mistake</b>: Do not confuse <code>=</code> (the assignment operator) with <code>==</code>.</p>
-    </section>
-
-    <section>   
-        <h2>Example</h2>
-        <p>If a visitor is under or equal to 18 years old, you can deny them access to your site. How would you write that in JS?</p>
-    </section>
-
-    <section>
-        <h2>Operators</h2>
-        <table>
-            <tr>
-                <th>True</th>
-                <th>False</th>
-            </tr>
-            <tr>
-                <td>5 < 10</td>
-                <td>10 < 5</td>
-            </tr>
-             <tr>
-                <td>10 >= 9</td>
-                <td>9 >= 10</td>
-            </tr>
-             <tr>
-                <td>9 <= 9</td>
-                <td>10 <= 9</td>
-            </tr>
-             <tr>
-                <td>100 === 100</td>
-                <td>100 === 101</td>
-            </tr>
-             <tr>
-                <td>0 !== 1</td>
-                <td>0 !== 0</td>
-            </tr>
-        </table>
-    </section>
-
-    <section>
-        <h2>Remember</h2>
-        <ol>
-            <li class="fragment">Remember 100>100 is false, BUT 100>=100 is true.</li>
-            <li class="fragment">-12 < 0 is correct because negative numbers are less than zero. </li>
-            <li class="fragment">Numbers are always less than letters.</li>
-            <li class="fragment">What do you think happens if you say: “apple”<“bear”</li>
-            <li class="fragment">What about just two ==  ? (Just value, not type and value)</li>
-            <li class="fragment">!== means that two things are not equal, you can test for that too! (ex: 10 !==9 ) </li>
-        </ol>
-    </section>
-
-    <section>
-        <h2>True or false</h2>
-        <p>“javascript”===“JavaScript”</p>
-    </section>
-
-    <section>
-        <h2>True or false</h2>
-        <p>“3”===3</p>
-    </section>
-
-    <section>
-        <h2>True or false</h2>
-        <p>“lion” > “zebra”</p>
-    </section>
-
-    <section>
-        <h2>True or false</h2>
-        <p>“lion” !== “zebra”</p>
-    </section>
-
-    <section>
-        <h2>True or false</h2>
-        <p>1000 <= 1000</p>
-    </section>
-
-    <section>
-        <h2>Conditionals with Booleans</h2>
-        <p>You can use a boolean (true or false) as a condition in your if/else statements. </p>
-<pre><code class="js" data-trim contenteditable>  
-if ( true ) {
-    document.write("This is Correct!");
-}
-else {
-    document.write("This is Incorrect!");
-}
-</code></pre>
-    </section>
-
-    <section>
-        <h2>Truthy and Falsey</h2>
-        <p>"Falsey Values": these will evaluate to false if they are in the conditional statement</p>
-        <ul>
-            <li>0</li>
-            <li>-0</li>
-            <li>NaN</li>
-            <li>" "</li>
-            <li>false</li>
-            <li>null</li>
-            <li>undefined</li>
-        </ul>
-        <p style="font-size: 20px">What will this evaluate to?</p>
- <pre><code class="js" data-trim contenteditable>  
-var a = 10;
-if (a) {
-    //code block
-}   
-</code></pre>    
-    </section>
-
-    <section>
-        <h2>Programming Multiple Outputs</h2>
-        <p>Often times, we have more that one input or condition, and therefore, will need more outputs.</p>
-        <p>Example: If it is sunny and warm, you can go to the beach. But if it is warm and raining, you will probably stay in.</p>
-        <img src="images/ifelse.png" alt="">     
-    </section>
-
-    <section>
-        <h2>in pictures</h2>
-        <img src="images/if-else-statement.png" alt="Control Flow">
-    </section>
-
-    <section>
-        <p>No limit to the number of else if statements that you can have in your code!</p>
-<pre><code class="js" data-trim contenteditable>  
-var isTeacher = prompt("Are you a teacher?");
-var isStudent = prompt("Are you a student?");
-if ( isTeacher.toUpperCase() === "YES" ) {
-    alert("Welcome Teacher");
-}
-else if (isStudent.toUpperCase() === "YES") {
-    alert("Welcome student");
-}
-else {
-  alert ("Who are you?");
-}
-</code></pre>
-    </section>
-
-    <section>
-        <h2>Multiple Outputs</h2>
-        <p>What is the value of the variable itemsToBuy?</p>
- <pre><code class="js" data-trim contenteditable>        
-var itemToBuy = " ";
-var savings = 100;
-if ( savings > 500 ) {
-  itemToBuy = "Computer";
-} else if ( savings > 200 ) {
- itemToBuy = "Phone";
-} else if ( savings > 0 ) {
- itemToBuy = "Dinner";
-} else {
- itemToBuy = "...still saving...";
-}
-</code></pre>
-    </section>
-
-    <section>
-        <h2>Exercise</h2>
-        <p>Clock Exercise</p>
-        <ol>
-            <li>Create a variable called time and set it equal to the time that the user answers when you ask “What time is it?”</li>
-            <li>Create an if statement so that if the time is less than 10, the user will be greeted with a “Good Morning!” **NOTE: We are using military time.</li>
-            <li>If the time is less than 20, the user should be greeted by a “Good Afternoon!”.</li>
-            <li>If the answer is anything else, the user should be greeted by a “Good Evening!”.</li>
-        </ol>
-    </section>
-
-    <section>
-        <h2>Explaining Code</h2>
-        <p>The importance of being able to explain code and leaving comments!</p>
-    </section>
-
-    <section>
-        <h2>Another exercise</h2>
-        <p>Explain this code</p>
-<pre><code class="js" data-trim contenteditable>  
-var cupcakesSold = parseInt(prompt("How many cupcakes did you sell today?"));   
-var profitMargin = 30;
-if (cupcakesSold < profitMargin ) {
-    alert("Gotta sell more!");
-}
-else if (cupcakesSold == profitMargin) {
-    alert("Broke even!");
-}
-else {
-    alert("We are doing well!!!");
-}
-</code></pre>       
-    </section>
-
-    <section>
-        <h2>Another exercise</h2>
-        <p>Explain this code</p>
-<pre><code class="js" data-trim contenteditable> 
-var wholesalePrice = 5.45;
-var retailPrice = 9.99;
-var quantity = 47;
-var salesTotal= retailPrice * quantity;
-var profit= salesTotal-(wholesalePrice * quantity);
-if (profit > 400 ) {
-    document.write("Time to go home");
-}
-else {
-    document.write("Keep working");
-} 
-</code></pre>       
-    </section>
-
-    <section>
-        <h2>Logical Operators</h2>
-        <p>These are typically used in combination with the comparison operators:</p>
-<pre><code class="js" data-trim contenteditable> 
-var posNum = 4;
-var negNum = -2;
-</pre></code>
-<table border="2" cellspacing="5" cellpadding="5" style="font-size: 16px; line-height: 1em;">
- <thead>
-  <tr><td>Operator <td>Meaning <td>True expressions
- <tbody>
- <tr><td>&&  <td>AND <td> <code>posNum &gt; 0 && negNum &lt; 0</code><br><br> <code>4 &gt; 0 && -2 &lt; 0</code>
- <tr><td>||    <td>OR   <td> <code>posNum &gt; 0 || negNum &gt; 0 </code><br><br> <code>4 &gt; 0 || -2 &gt; 0 </code>
- <tr><td>!     <td>NOT <td> <code>!(posNum === negNum)</code>  <br><br> <code> !(posNum &lt; 0) </code>
-</table>
-
-    <p style="font-size: 20px">When combining together multiple conditions, use parantheses to group:</p>
-<pre><code class="js" data-trim contenteditable> 
-var myAge = 28;
-if ((myAge &gt;= 0 && myAge &lt; 3)  || myAge &gt; 90) {
-  console.log("You're not quite in your peak.");
-}
-</pre></code>
-    </section>
-
-    <section>
-        <h2><span style="text-decoration: underline">And</span> Operator</h2>
-        <p>All statements have to be correct for something to be true (and for the program to run)</p>
-        <p class="fragment">Example: You need to be near a pool AND know how to swim in order to go swimming. </p>
-        <p class="fragment">We use && in order to have both of the conditions met. You put one condition on either side of the &&.</p>
-        <p class="fragment">You can have more than one set of &&</p>
-<pre class="fragment"><code class="js" data-trim contenteditable> 
-var age = 30;
-var gender= "female";
-if ( age > 18 && gender === "female" ) {
-    alert("Welcome!");
-}
-</pre></code>
-    </section>
-
-    <section>
-        <h2><span style="text-decoration: underline">Or</span> operator</h2>
-        <p>One of the statements has to be correct for something to be true (and for the program to run).</p>
-        <p class="fragment">Example: You need to be near a pool OR near the beach in order to go swimming. </p>
-        <p class="fragment">We use || in order to have both of the conditions met. You put one condition on either side of the ||.</p>
-<pre class="fragment"><code class="js" data-trim contenteditable> 
-var agree = prompt("Do you agree?");
-if ( agree === "Yes" || agree === "Y" ) {
-    alert("Welcome!");
-}
-</pre></code>       
-    </section>
-
-    <section>   
-        <h2>What will appear in the browsers console?</h2>
-<pre class="fragment"><code class="js" data-trim contenteditable> 
-var ships = 10;
-var score = 0;
-if (  ships === 0 || score === 0 ) {
-  console.log('Game over.');
-}  else {
-  console.log('Your score is zero.');
-}
-</pre></code>  
-    </section>
-
-    <section>
-        <h2>What will appear in the browsers console?</h2>
-<pre class="fragment"><code class="js" data-trim contenteditable> 
-var x = 10;
-var y = 20;
-if (  x < 10 && y > 10 ) {
-  console.log('The condition passes.');
-} else {
-  console.log('The condition fails.');
-}
-</pre></code> 
-    </section>
-
-    <section>   
-        <h2>Can I go out?</h2>
-<pre class="fragment"><code class="js" data-trim contenteditable> 
-var hoursOfWork = 2;
-var today = 'Friday'
-
-if ( hoursOfWork >= 10 && today === 'Friday' ) {
-  alert("Too much work! I can’t go out");    
-} 
-else if ( hoursOfWork >= 5 && today === 'Friday' ) {
-  alert("I will catch up with you when I can");    
-}
-else if ( hoursOfWork === 2 && today === 'Friday' ) {
-  alert("It's Friday, let’s go!");   
-} else {
-  alert("This isn't Friday. I need to stay home.");
-}
-</pre></code> 
-    </section>
-
-    <section>
-        <h2>Review Exercise</h2>
-        <ul>
-            <li class="fragment">Create a variable named busRunning and ask the user if the bus is running today.</li>
-            <li class="fragment">Create a second variable named passengerNum and ask the user how many passengers are currently on the bus.</li>
-            <li class="fragment">Create a conditional statement that says if the bus is running AND the bus has less than or equal to 75 passengers, the program gives them an alert that says “You can take the bus!”</li>
-            <li class="fragment">Otherwise, the user should get an alert that says “You will have to wait.”</li>
-        </ul>
-        <aside class="notes">
-var busRunning = prompt("Is the bus running today?");
-var passengerNum = prompt("How many passengers are on the bus?");
-if (busRunning.toUpperCase() === "YES" && passengerNum >= 5 ) {
-    alert ("You can take the bus!")
-}
-else {
-    alert("You will have to wait.");
-}
-        </aside>
-    </section>
-
-    <section>
-        <h2>Review Exercise</h2>
-        <p>Create a variable named userAge and set it equal to the answer your user types into a prompt when asked how old they are. If the user is over 25 tell them that they can rent a car. If not tell them that they can’t rent a car. </p>
-    </section>
-
-    <section>   
-        <h1>Functions</h1>
-    </section>
-
-    <section>
-        <h2>What are functions?</h2>
-        <p>JavaScript is sometimes called a functional programming language.</p>
-        <p class="fragment">Functions are at the heart of JavaScript. They let you write code that you can quickly use again and again.</p>
-        <p class="fragment"><span style="color:yellow">Remember!</span>: Our song exercise at the beginning of class? The chorus acts like a function that you can call over and over when you want to singer to sing those lyrics. What are some real life functions?</p>
-        <p class="fragment">Coffee shop example</p>
-    </section>
-
-    <section>
-        <h2>Let's talk about syntax</h2>
-        <p>The following is how you write a function:</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>         
-function functionName() {
-}
-</pre></code> 
-        <p class="fragment">You name a function just like you name a variable. You should name a function something that makes sense in reference to what you are doing, and you need to use camel case.</p>
-        <p class="fragment">Function names cannot start with a number.</p>
-        <p class="fragment">Everything within the curly braces is the code block (just like in conditional statements)</p>
-    </section>
-
-    <section>
-        <h2>Running a Function</h2>
-        <p>The code that you put in the code block is run whenever the function is activated:</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>  
-function myGreeting() {
-    alert("Good morning!");
-}
-</pre></code> 
-        <p class="fragment">To activate our code block, we need to call the function. You do it like this:</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>  
-myGreeting();
-</pre></code> 
-        <p class="fragment">The parenthesis are what actually call the function. They are very important!</p>
-    </section>
-
-    <section>
-        <h2>Function</h2>
-        <p>In summary, Functions are re-usable collections of statements.</p>
-        <p>First declare the function:</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>  
-function sayMyName() {
-    console.log('Hi Jessica!');
-}
-</pre></code> 
-        <p>Then call it (as many times as you want): </p>
-<pre class="fragment"><code class="js" data-trim contenteditable>  
-sayMyName();
-</pre></code> 
-    </section>
-
-    <section>
-        <h2>Example in JSBin</h2>
-<pre class="fragment"><code class="js" data-trim contenteditable>  
-//Create your function first
-function alertRandom() {
-//create a new random number each time the function is run
-  var randomNumber = Math.floor(Math.random()*6)+1;
-  alert(randomNumber);
-}
-//calling the function
-alertRandom();
-</pre></code> 
-    </section>
-
-    <section>
-        <h2>Calling a function more than once:</h2>
-<pre class="fragment"><code class="js" data-trim contenteditable>  
-function alertRandom() {
-    var randomNumber = Math.floor(Math.random()*6)+1;
-    alert(randomNumber);
-}
-alertRandom();
-alertRandom();
-alertRandom();
-alertRandom();
-</pre></code> 
-    </section>
-
-    <section>
-        <h2>Variables and Functions</h2>
-<pre class="fragment"><code class="js" data-trim contenteditable>  
-var alertRandom = function () {
-    var randomNumber = Math.floor(Math.random()*6)+1;
-    alert(randomNumber);
-};
-</pre></code>   
-        <p class="fragment">This is an anonymous function and will run as part of the variable.</p>
-        <p class="fragment">We do have to end this statement with a semi-colon </p>
-    </section>
-
-    <section>
-        <h2>Review</h2>
-        <p>Which of the following describes a function?</p>
-        <ol>
-            <li>A function means the same things as a JavaScript program.</li>
-            <li>A function let’s you store a block of code that you can use over and over again.</li>
-            <li>A function is used to add decision-making to your program</li>
-            <li>A Function is used to hold similar pieces of information, like a database. </li>
-        </ol>
-    </section>
-
-    <section>
-        <h2>Review</h2>
-        <p>Which of the following code snippets correctly shows how to create a function named sayHello which opens an alert dialog with the string "Hello" in it?</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>  
-function sayHello {
-    alert("Hello");
-}
-</pre></code>   
- <pre class="fragment"><code class="js" data-trim contenteditable>  
-function sayHello (
-    alert("Hello");
-)
-</pre></code>  
- <pre class="fragment"><code class="js" data-trim contenteditable>  
-function sayHello() {
-    alert("Hello");
-}
-</pre></code>  
- <pre class="fragment"><code class="js" data-trim contenteditable>  
-var function=sayHello() {
-    alert("Hello");
-}
-</pre></code>  
-        </ol>
-    </section>
-
-    <section>
-            <h2>Coding Conventions: Spacing </h2>
-            <p>Use newlines between statements and use spaces to show blocks.</p>
-            <p class="fragment">Bad:</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>  
-function addNumbers() {return num1 + num2;}
-</pre></code>  
-            <p class="fragment">Good:</p>
- <pre class="fragment"><code class="js" data-trim contenteditable>  
-function addNumbers() {
-    return num1 + num2;
-}
-</pre></code>  
-    </section>
-
-    <section>
-        <h2>Functions change the flow</h2>
-        <p class="fragment">Up until this point, our programs have been running form top to bottom. Functions allow the browser interpreter to jump around to be sure that proper code is being called depending on the contents of the function. </p>
-        <p class="fragment">Many developers write their functions at the beginning of their code (all together).</p>
-    </section>
-
-    <section>
-        <h2>Getting information from a function</h2>
-        <p class="fragment">Functions don't just run JavaScript statements. They can also return values that you can use elsewhere in a program.</p>
-        <p class="fragment">Functions can also give something back when they finish. This is called returning a value.</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>  
-function goToCoffeeShop() {
-    return "Espresso is on the way";
-}
-</pre></code> 
-        <p class="fragment">The value that's returned by the function can then be used in your program.</p>
-    </section>
-
-    <section>
-        <h2>Getting information from a function</h2>
-        <p class="fragment">‘return’ing something in JavaScript is very useful </p>
-        <p class="fragment">You can use its values for many other parts of your program (like displaying on your website, using to calculate new things, etc).</p>
-        <p class="fragment">If you want to check to see if a user has filled out a form, you can use a function to get the value of the input and then “return” true if there has been an input. </p>
-        <p class="fragment">Functions can have more that one return statement in them. (There can be conditionals!)</p>
-        <p class="fragment">Return statements should be the last thing in the code block of a function because they immediately exit the function.</p>
-    </section>
-
-    <section>
-        <h2>Return Values</h2>
-        <p class="fragment">The return keyword returns a value to whoever calls the function (and exits the function):</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>          
-function addNumbers(num1, num2) {
-    var result = num1 + num2;
-    return result; // Anything after this line won't be executed
-}
-var sum = addNumbers(5, 2);
-</pre></code>
-        <p class="fragment"> You can use function calls in expressions:</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>          
-var biggerSum = addNumbers(2, 5) + addNumbers(3, 2);
-</pre></code>
-        <p class="fragment">  You can even call functions inside function calls:</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>          
-var hugeSum = addNumbers(addNumbers(5, 2), addNumbers(3, 7));
-</pre></code>
-    </section>
-
-    <section>
-        <h2>Review</h2>
-        <p>After the code below runs, what value is stored in the variable dayOfWeek? </p>
-<pre class="fragment"><code class="js" data-trim contenteditable>          
-function getDay() {
-  return "Monday";
-  alert("Calculating day");
-  return "Friday";
-}
-
-var dayOfWeek = getDay();
-</pre></code>
-    </section>
-
-    <section>
-        <h2>Create in jsbin</h2>
-        <p class="fragment">1. Create a function named getYear -- don't add any code inside the function yet.</p>
-        <p class="fragment">2. Inside the function's code block add this line of code </p>
-<pre class="fragment"><code class="js" data-trim contenteditable>                 
-var year = new Date().getFullYear(); 
-</pre></code>
-        <p class="fragment">This creates a new variable and stores the current year in it.</p>
-        <p class="fragment">3. Now, add a statement that returns this variable from the function. </p>
-        <p class="fragment">4. Call the getYear function: store the returned value of the function in a new variable named yearToday.</p>
-    </section>
-
-    <section>
-        <h2>Sending information to a function</h2>
-        <p class="fragment">You can give information to a function to change how it works.</p>
-        <p class="fragment">Coffee shop example</p>
-        <p class="fragment">JavaScript functions can also accept information called an argument, which you send to the function.</p>
-        <p class="fragment">The argument is stored in a variable called a parameter that you can use inside the function.</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>                 
-function myFunction(parameter) {
-    //code block
-}
-</pre></code>
-        <p class="fragment"> Parameters act a lot like variables. </p>
-    </section>
-
-    <section>
-        <h2>Parameters and arguments</h2>
-        <p class="fragment">Passing an argument to a function</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>                 
-function goToTheCoffeeShop(drink) {
-    alert(drink + " is on the way!");
-}
-goToTheCoffeeShop("Espresso");
-</pre></code>
-    <p class="fragment">You can pass different values and get different results!</p>
-    <p class="fragment">You can also have multiple arguments in a function.</p>
-    </section>
-
-    <section>
-        <h2>Multiple Arguments</h2>
-        <p>In our example, let’s say I also want something to eat.</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>                        
-function goToTheCoffeeShop(drink, pastry) {
-    alert(drink + "and "+ pastry + " are on the way!");
-}
-goToTheCoffeeShop("Espresso", "scone");
-</pre></code>
-        <p class="fragment">You can pass different values and get different results!</p>
-        <p class="fragment">You can also have multiple arguments in a function.</p>
-        <p class="fragment">You won’t want to add more than 4 or 5 arguments to a function. This can get tedious. </p></p>
-    </section>
-
-    <section>
-        <h2>Exercise</h2>
-        <p>In JSBin, let’s create a function to calculate the area of a rectangle.</p>
-    </section>
-
-    <section>   
-        <h2>Arguments Review</h2>
-        <p>Functions can accept any number of named arguments:</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>                        
-function sayMyName(name) {
-    console.log('Hi, ' + name);
-}
-sayMyName('Claire');
-sayMyName('Testy McTesterFace');
-</pre></code>
-<pre class="fragment"><code class="js" data-trim contenteditable>                        
-function addNumbers(num1, num2) {
-    var result = num1 + num2;
-    console.log(result);
-}
-addNumbers(7, 21);
-addNumbers(3, 10);
-</pre></code>
-        <p class="fragment">You can also pass variables:</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>                        
-var number = 10;
-addNumbers(number, 2);
-addNumbers(number, 4);
-</pre></code>
-    </section>
-
-    <section>
-        <h2>Fun with Functions</h2>
-<pre class="fragment"><code class="js" data-trim contenteditable>                               
-var nameImprover = function(name, adj) {
-    return 'Col ' + name + ' Mc' + adj + ' pants';
-};
-</pre></code>
-    </section>
-
-    <section>
-        <h2>Return/Side Effects</h2>
-<pre class="fragment"><code class="js" data-trim contenteditable>                         
-var nameImprover = function(name, adj) {
-	return 'Col ' + name + ' Mc' + adj + ' pants';
-};	
-
-var nameLogger = function(name, adj) {
-	var newName = 'Col ' + name + ' Mc' + adj + ' pants';
-	console.log(newName); 
-};
-</pre></code>
-    </section>
-
-    <section>
-        <h2>Arguments Keyword</h2>
-<pre class="fragment"><code class="js" data-trim contenteditable>                                 
-var addTwo = function(a, b) {
-	console.log(arguments); // logs [3,10]
-	return a + b; 
-};
-
-addTwo(3, 10); // 13
-</pre></code>
-    </section>
-
-    <section>
-        <h2>More on Variables</h2>
-        <p class="fragment">As you create more complex programs, you'll end up adding multiple functions to your scripts.</p>
-        <p class="fragment">It's possible, even likely, that a function defines and uses the same name as a variable used elsewhere in your script.</p>
-        <p class="fragment">Example: </p>
-        <p class="fragment">You might write some JavaScript with a variable named “width”, but also have a function named computeArea that also has a width variable inside it.</p>
-    </section>
-
-    <section>
-        <h2>Javascript can handle it!</h2>
-        <p class="fragment">JavaScript can handle this!</p>
-        <p class="fragment">Each function acts like its own individual universe and the variables that are created within that universe don't interact with the variables created in another universe or another function.</p>
-        <img class="fragment" src="images/stars.png" alt="">
-    </section>
-
-    <section>
-        <h2>Variable Scope</h2>
-<pre class="fragment"><code class="js" data-trim contenteditable> 
-function greeting() {
-    var person= "Lilah";
-    alert(person);
-}
-
-var person = "George";
-greeting();
-alert(person);
-</pre></code>
-    <img class="fragment" src="images/alerts.png" alt="">
-    </section>
-
-    <section>
-        <h2>GLobal vs Local</h2>
-        <img src="images/global.png" alt="">
-    </section>
-
-    <section>
-        <h2>GLobal vs Local</h2>
-        <p class="fragment">LOCAL: A variable declared in a function only lives inside that function and can't be accessed or changed outside of that function.</p>
-        <p class="fragment">GLOBAL: Any variables you create in a script that aren't contained in a function are in this bigger universe called the global scope.</p>
-        <p class="fragment">**All functions can access the global scope.</p>
-        <p class="fragment">The word “scope” refers to where a variable is visible and accessible.</p>
-    </section>
-
-    <section>
-        <h2>Things to remember</h2>
-        <p class="fragment">1.  Always use the var keyword when creating a variable inside a function.</p>
-        <p class="fragment">If you don't, your function is reaching out to the global scope and might override another variable with the same name.</p>
-        <p class="fragment">2. It’s okay to use the same variable name inside of functions.</p>
-        <p class="fragment">As long as you use the var keyword to create the variable, the variable will only exist inside that function.</p>
-    </section>
-
-    <section>
-        <h2>Variable Scope</h2>
-        <p>A variable with "local" scope:</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>                        
-function addNumbers(num1, num2) {
-    var localResult = num1 + num2;
-    console.log("The local result is: " + localResult);
-}
-addNumbers(5, 7);
-console.log(localResult);
-</pre></code>
-    </section>
-
-    <section>
-        <h2>Variable scope</h2>
-        <p>A variable with "global" scope:</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>                        
-var globalResult;
-function addNumbers(num1, num2) {
-    globalResult = num1 + num2;
-    console.log("The global result is: " + globalResult);
-}
-addNumbers(5, 7);
-console.log(globalResult);
-</pre></code>
-    </section>
-
-    <section>
-        <h2>Exercise</h2>
-        <p>The Fortune Teller</p>
-        <p>Why pay a fortune teller when you can just program your fortune yourself?</p>
-        <ul>
-            <li>Write a function named tellFortune that:</li>
-            <li>Outputs your fortune to the screen like so: "You will be a [job] in [city], and married to [partner's name] with [number] kids."</li>
-            <li>Call that function 3 times with 3 different values for the arguments.</li>
-        </ul>
-</section>
-<section>
-    <h2>Exercise</h2>
-    <p>The Age Calculator</p>
-    <p>Forgot how old you are? Calculate it!</p>
-    <ul>
-        <li>Write a function named calculateAge that:</li>
-        <li>Takes 2 arguments: birth year, current year.</li>
-        <li>Calculates the 2 possible ages based on those years.</li>
-        <li>Outputs the result to the screen like so: "You are either NN or NN"</li>
-        <li>Call the function three times with different sets of values.</li>
-        <li>Bonus: Figure out how to get the current year in JavaScript instead of passing it in.</li>
-    </ul>
-        </section>
-
-
-        <section> 
-            <h2>Review</h2>
-<pre class="fragment"><code class="js" data-trim contenteditable>                        
-var divideByThree = function(number) {
-    var val = number / 3;
-    console.log(val);
-};
-</pre></code>
-        <p class="fragment">How would you call this function so that 3 is logged to the console?</p>
-        </section>
-
-        <section> 
-            <h2>Review</h2>
-<pre class="fragment"><code class="js" data-trim contenteditable>                        
-var greeting = function(name) {
-    console.log("Great to see you," + " " + name);
-};
-</pre></code>
-        <p class="fragment">How would you call this function so that “Great to see you, Grace Hopper” is logged to the console?</p>
-        </section>
-
-        <section> 
-            <h2>Review</h2>
-<pre class="fragment"><code class="js" data-trim contenteditable>                        
-var foodDemand = function(food) {
-    console.log("I want to eat" + " " + food);
-};
-</pre></code>
-        <p class="fragment">How would you call this function so that “I want to eat Chinese food” is logged to the console?</p>
-        </section>
-
-        <section> 
-            <h2>Review</h2>
-<pre class="fragment"><code class="js" data-trim contenteditable>                        
-var coffeeCost = function(cost) {
-    var total = cost * 5;
-    console.log(total);
-}
-</pre></code>
-        <p class="fragment">Jessica drinks five coffees a day. How would you call this function if the cost of her coffee is $3?</p>
-        </section>
-
-        <section>
-            <h2>Review</h2>
-            <p>Given the code below, what appears in the alert dialogue when this program runs?</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>                        
-var name = "Trish";
-function setName() {
-  var name = "Sarah";
-}
-setName();
-alert(name);
-</pre></code>
-        </section>
-
-        <section>
-            <h2>Review</h2>
-            <p>Functons and Conditional Statements</p>
+            <h2>ECMAScript</h2>
+            <p>ECMAScript was created to standardize JavaScript. It is now the language that we are using when we implement our JS code. Each year, new features are released.</p>
             <ul>
-                <li class="fragment">Write a function named greaterNum that:</li>
-                <li class="fragment">Takes 2 arguments, both numbers.</li>
-                <li class="fragment">Returns whichever number is the greater (higher) number.</li>
-                <li class="fragment">Call that function 2 times with different number pairs, and log the output to make sure it works (e.g. "The greater number of 5 and 10 is 10.").</li>
+                <li>6th Edition - ECMAScript 2015</li>
+                <li>7th Edition - ECMAScript 2016</li>
+                <li>8th Edition - ECMAScript 2017</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>The 6th Edition (ES6)</h2>
+            <p class="fragment">Lots of new tools were released....</p>
+            <p class="fragment">Including new ways of declaring variables.</p>
+            <img class="fragment" src="images/es6.png" alt="ES6 Logo">
+        </section>
+
+        <section>
+            <h2>More on Variables</h2>
+            <p>We learned <code>var</code> is the keyword to declare a variables. But now, we have two more!</p>
+            <ul>
+                <li><code>let</code></li>
+                <li><code>const</code></li>
             </ul>
         </section>
 
