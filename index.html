@@ -321,14 +321,14 @@ alert("Hello there.");
                 <li>arrays</li>
                 <li>objects</li>
             </ul>
-            <p>There are also data types that cater for situations where there is no value undefined and null. Loose typing- you don't tell JS what type of data type it is, it guesses. You can use <a href="http://www.daaq.net/old/javascript/index.php?page=js+data+types&parent=core+javascript">typeof</a> to see what it thinks.
+            <p>There are also data types that cater for situations where there is no value undefined and null. Loose typing- you don't tell JS what type of data type it is, it guesses. You can use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof">typeof</a> to see what it thinks.
             </p>                                                       
         </section>
 
         <section>
             <h2>Data Type 1: Strings</h2>
             <p class="fragment">A string is something that would be in quotes. A string is how you would represent text, like “Beyonce”. Strings ALWAYS need to be surrounded by quotes.</p>
-            <p class="fragment">In your <a href="www.jsbin.org">JS bin</a>, enter 
+            <p class="fragment">In your <a href="https://www.jsbin.com">JS bin</a>, enter 
 <pre class="fragment"><code class="js" data-trim contenteditable>
 console.log("Beyonce"); 
  </code></pre>             
@@ -352,8 +352,8 @@ var name = "Laura";
 <pre><code class="js" data-trim contenteditable> 
 var name = 'Gaga';
 var title = 'Lady';
-var greeting = 'Hello ' + title;
-var formalGreeting = greeting + ', ' + name;
+var greeting = 'Hello ';
+var formalGreeting = greeting + ', ' + title + ' ' + name;
 </code></pre>
         </section>
 
@@ -399,6 +399,7 @@ document.write("Hello " + name);
             <p class="fragment">A madlib is a word game where one player prompts others for a list of words to substitute for blanks in a story, before reading the story aloud.</p>
             <p class="fragment">Let’s create a madlib game for our users with the following sentence:</p>
             <p class="fragment">“There once was a [adjective] programmer who wanted to use JavaScript to [verb] with the [noun]."</p>
+            <img class="fragment" src="images/exercise.gif" alt="Exercise Gif">
         </section>
 
         <section>
@@ -501,6 +502,7 @@ var weeksPerYear =
             <p class="fragment">1. Use JavaScript to calculate the number of seconds in a day and log the answer to the console.</p>
             <p class="fragment">2. Log the number of second in a year</p>
             <p class="fragment">3. Log the number of seconds you have lived</p>
+            <img class="fragment" src="images/exercise.gif" alt="Exercise Gif">
         </section>
 
         <section>
@@ -528,6 +530,7 @@ var quantity = 47;
 var salesTotal = retailPrice * quantity;
 var profit = salesTotal - (wholesalePrice * quantity);
 </code></pre>       
+            <p class="fragment">Try it!</p>
         </section>
 
         <section>
@@ -541,6 +544,7 @@ var profit = salesTotal - (wholesalePrice * quantity);
                 <li class="fragment">Calculate how many you would eat total for the rest of your life.</li>
                 <li class="fragment">Output the result to the screen like so: "You will need NN to last you until the ripe old age of X".</li>
             </ul>
+            <img class="fragment" src="images/exercise.gif" alt="Exercise Gif">
         </section>
 
         <section>
@@ -776,11 +780,19 @@ console.log(doll);
             <h2>Exercise</h2>
             <p>Create an object to hold information on your favorite recipe. It should have properties for title (a string), servings (a number), and ingredients (an array of strings).</p>
             <p>Console.log the object</p>
+            <img src="images/exercise.gif" alt="Exercise Gif">
         </section>
 
         <section>
-            <h2>Exercise</h2>
-            <p><a href="https://repl.it/enc/2">Click here for the exercise</a></p>
+            <h2>More Practice</h2>
+            <p>Create an animal object, and define these properties on it</p>
+            <ul>
+                <li>"username" (a string)</li>
+                <li>"tagline" (a string)</li>
+                <li>"noises" (an array of strings)</li>
+                <li>"3 fav foods" (an array of strings)</li>
+            </ul>
+            <p>For each property, decide whether its best to use dot notation or bracket notation.</p>
         </section>
 
         <section>
@@ -892,6 +904,14 @@ var goodPickupLines = null;
                 <li><code>let</code></li>
                 <li><code>const</code></li>
             </ul>
+        </section>
+
+        <section>
+            <h2>const</h2>
+            <p class="fragment">Useful if you’re setting a variable that you don’t plan on changing.</p>
+            <p class="fragment">Protects and prevents your variables from reassignment.</p> 
+            <p class="fragment">In compiled languages, there is an increase in runtime efficiency of your code and thus an overall performance boost vs using plain ‘ol var.</p>
+            <p class="fragment">Let's try it in Jsbin!</p>
         </section>
 
         <section style="text-align: left;">
