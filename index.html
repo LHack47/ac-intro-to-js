@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>AnnieCannons slides</title>
+    <title>AnnieCannons Intro to JS slides</title>
 
     <meta name="description" content="AnnieCannons class slides">
     <meta name="author" content="AnnieCannons">
@@ -21,6 +21,7 @@
 
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/classcolors.css">
 
     <!-- Printing and PDF exports -->
     <script>
@@ -49,18 +50,29 @@
         </section>
         <!--/Intro Slides-->
 
-        <section>
+        <!-- <section>
             <h2>Intro to JS Review Study Guide</h2>
             <p>Click <a href="https://docs.google.com/document/d/11BBUpJFQSr45QbfnK3Pt9jKFaEwO_zx7_IHw1foL5GA/edit?usp=sharing" target="_blank">here</a> to view and make a copy for reference.</p>
+        </section> -->
+
+        <section>
+            <h2>Unit Overview</h2>
+            <ul>
+                <li>Introduction to JavaScript</li>
+                <li>Statements and the Console</li>
+                <li>Variables</li>
+                <li>Data Types</li>
+                <li>Introduction to ES6</li>
+            </ul>
         </section>
 
         <section>
             <h2>What have we learned so far?</h2>
             <ul>
-                <li class="fragment">HTML5 - a Markup Language</li>
-                <li class="fragment">CSS3 - Web-based Technology</li>
+                <li class="fragment"><span class="orange">HTML5</span> - a Markup Language</li>
+                <li class="fragment"><span class="orange">CSS3</span> - Web-based Technology</li>
             </ul>
-            <p class="fragment">How is JavaScript different?</p>
+            <p class="fragment">How is <span class="yellow">JavaScript</span> different?</p>
             <img src="images/question.gif" alt="Question Mark Gif" width="200px" class="fragment">
         </section>
 
@@ -69,7 +81,7 @@
             <p class="fragment"> JavaScript is a programming language that drives the web:</p>
                 <ul>
                     <li class="fragment">from front-end user interface design,</li>
-                    <li class="fragment">to backend server-side programming,</li>
+                    <li class="fragment lightgreen">to backend server-side programming,</li>
                     <li class="fragment">at every stage of a website and web application.</li>
                 </ul>   
             <p class="fragment">JavaScript is used on nearly every website in the world.</p>
@@ -87,29 +99,31 @@
             <img src="images/javascript-textbook-cover.png" alt="JavaScript Textbook Cover" style="width: 400px;">
         </section>
 
-        <section>
+        <!-- <section>
             <h1>JS Exercise</h1>
             <p>Login to your account at
             <a target="_blank" href="https://www.codecademy.com/learn/introduction-to-javascript">Codecademy</a>. Complete the Introduction to JS course by the end of this unit.</p>
-            <a href="https://trello.com/b/RQrD5Ye2/template-student-journey-phase-24-javascript" target="_blank"><img height="50px" src="images/trello-logo-blue.png" alt="Trello logo"></a><br>
+            <a href="https://trello.com/b/RQrD5Ye2" target="_blank"><img height="50px" src="images/trello-logo-blue.png" alt="Trello logo"></a><br>
             <img src="images/exercise.gif" alt="Exercise time">
-          </section>
+          </section> -->
 
         <section>
-            <h2>What is Javascript?</h2>
+            <h2>What is JavaScript?</h2>
             <p>JavaScript is used to make dynamic webpages interactive.</p>
-            <p>Read more <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank">here</a>.</p>
+            <p>If you want to know more, click <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank">here</a>.</p>
         </section>
 
         <section>
             <h2>What can JS do?</h2>
             <ul>
                 <li class="fragment">Interactive image galleries</li>
-                <li class="fragment">Full featured web applications</li>
+                <li class="fragment lightgreen">Full featured web applications</li>
                 <li class="fragment">Keep track of users with cookies </li>
-                <li class="fragment">Interactive elements like tabs, sliders and accordions</li>
+                <li class="fragment lightgreen">Interactive elements like tabs, sliders and accordions</li>
                 <li class="fragment">Drawing and animation</li>
-                <li class="fragment">Send and receive data</li>
+                <li class="fragment lightgreen">Send and receive data</li>
+            </ul>
+            <aside class="notes">JS can be written for anything - IoT devices, umbrellas, front end, backend, etc.</aside>
         </section>
 
         <section>
@@ -125,9 +139,9 @@
             <p>Like other languages in computer science, JavaScript has the following tools that we will cover:</p>
             <ul>
                 <li class="fragment">Data Types</li>
-                <li class="fragment">Functions</li>
+                <li class="fragment lightgreen">Functions</li>
                 <li class="fragment">Loops</li>
-                <li class="fragment">Conditional Statements</li>
+                <li class="fragment lightgreen">Conditional Statements</li>
                 <li class="fragment">Object-Oriented Programming</li>
             </ul>
         </section>
@@ -202,35 +216,21 @@
             <h2>Quick Review 6</h2>
             <p style="color:yellow">What do JavaScript, HTML, and CSS have in common?</p>
         </section>
-
+      
         <section>
-            <h2>GitHub Accounts!</h2>
-                <ul>
-                    <li class="fragment">We will be learning more about Git & Github later in the training.</li>
-                    <li class="fragment">For now, we will create accounts so that we can use JsBin with more options (like wrapping!)</li>
-                    <li class="fragment">Important: your username is like a handle; some people strive to keep their handle gender-neutral in order to avoid bias.</p>
-                </ul>
-                <p class="fragment">See next slide for instructions.</p>
-        </section>
-
-        <section>
-            <h2>GitHub Accounts!</h2>
-                <ul>
-                    <li class="fragment">The sign-up flow will ask questions about what you are interested in, and what you do. Feel free to answer the questions in a way that feels right to you - you can always change them later.</li>
-                    <li class="fragment">Once you have gone through the process and verified your email, navigate to <a href="https://jsbin.com/?html,output">JsBin.com</a>, and click 'Login or Register' in the upper right corner of your screen.</li>
-                    <li class="fragment">Log in with GitHub!</p>
-                </ul>
-                <p class="fragment">Click <a href="https://github.com/join" target="_blank">here</a> to get started!</p>
-        </section>
-
-        <section>
-            <h2>JSBin Preferences Settings</h2>
-            <p>Click <a href="https://jsbin.com/account/editor" target="_blank">here </a>to edit your JSBin Settings.</p>
+            <h2>Unit Overview</h2>
+            <ul>
+                <li class="green">Introduction to JavaScript</li>
+                <li>Statements and the Console</li>
+                <li>Variables</li>
+                <li>Data Types</li>
+                <li>Introduction to ES6</li>
+            </ul>
         </section>
 
         <section>
             <h2>Statements</h2>
-            <p>Each instruction in JS is a "statement", like:</p>
+            <p>Each instruction in JS is a "<span class="yellow">statement</span>", like:</p>
             <pre>console.log('Hello World!');</pre>
             <img style="width: 750px;" src="images/consolelog.png" alt="Console Log image">
             <p class="fragment">Each separate instruction in JavaScript is called a 'statement'. A 'simple' statement represents a single instruction and ends with a semi-colon.</p>
@@ -239,14 +239,14 @@
 
         <section>
             <h2>JavaScript Console</h2>
-            <p class="fragment">The Developer Tools on Chrome has a JavaScript Console.</p>
+            <p class="fragment">The <span class="orange">Developer Tools</span> on Chrome has a JavaScript Console.</p>
             <p class="fragment">You can use JS Console to:
                 <ul class="fragment">
                     <li>find errors in your JavaScript,</li>
-                    <li>find the type of error it is,</li>
+                    <li class="lightgreen">find the type of error it is,</li>
                     <li>determine which line of code the error is on.</li>
                 </ul>
-            <p class="fragment">All browsers have a JavaScript interpreter.</p> 
+            <!-- <p class="fragment">All browsers have a JavaScript interpreter.</p>  -->
             <p class="fragment">A common way to track what is happening in our programs is to use the following JavaScript statement:</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>
 console.log();
@@ -261,7 +261,7 @@ console.log();
         <section>
             <h2>JavaScript console in developer tools Part 2</h2>
             <p class="fragment">You can do basic math and other functions in the console.</p>
-            <p class="fragment">For instance, type 2+2 and hit enter, the console should show you the number 4.</p>
+            <p class="fragment">For instance, type <code class="aqua">2+2</code> and press <code class="aqua">enter</code>, the console should show you the number <code class="aqua">4</code>.</p>
             <p class="fragment">Try it!</p>
             <p class="fragment">The console is where you will check to make sure that your program is running the way you want it to.</p>
         </section>
@@ -269,11 +269,11 @@ console.log();
         <section>
             <h2>JS Statements</h2>
             <p>Let’s practice writing a command in JavaScript.</p>
-            <p>Open JSBin, and in the JavaScript section, write </p>
+            <p>Open JS Bin or the Console, and in the JavaScript panel, write </p>
 <pre><code class="js" data-trim contenteditable>
 alert();
 </code></pre>
-            <p class="fragment">Alert is a method that opens a dialogue box in your browser to display a message.</p>
+            <p class="fragment"><code class="aqua">alert()</code> is a method that opens a dialogue box or modal in your browser to display a message.</p>
             <p class="fragment">We write JavaScript programs by typing multiple JavaScript statements. Similarly, we write a paragraph by writing multiple sentences.</p>
         </section>
 
@@ -283,6 +283,17 @@ alert();
                 <li>A program is a set of statements that run one after the other.</li>
                 <li>One statement needs to be complete before the next statement runs.</li>
             </ol>
+        </section>
+
+        <section>
+            <h2>Unit Overview</h2>
+            <ul>
+                <li class="green">Introduction to JavaScript</li>
+                <li class="green">Statements and the Console</li>
+                <li>Variables</li>
+                <li>Data Types</li>
+                <li>Introduction to ES6</li>
+            </ul>
         </section>
 
         <section>
@@ -296,8 +307,6 @@ console.log(x);
 </code></pre>
             <p>Or declare and initialize in one statement:</p>
 <pre><code class="js" data-trim contenteditable>
-var x;
-x = 5;
 var y = 2;
 console.log(y);
 </code></pre>
@@ -313,18 +322,18 @@ x = 1;
             <h2>Variables</h2>
             <p class="fragment">Variables store information we need to use in the program. A variable is a named container for a value that can vary, a value that can change.</p>
            
-            <p class="fragment">Variables only exist when they are <span style="color:yellow">'declared'</span>, when we use the <span style="color:yellow">'var'</span> keyword and the name of the variable. e.g. <span style="color: aqua;">var z;</span></p>
-            <p class="fragment">A variable declaration is a simple statement, so it ends with a semi-colon (;).</p>
-            <p class="fragment">Assigning an initial value to a variable is called <span style="color:yellow">'initializing'</span>. e.g. <span style="color: aqua;">z = 0;</span> You can declare and initialize in one go (e.g. <span style="color: aqua;">var z = 0;</span>), or seperately (e.g. <span style="color: aqua;">var z; z = 0;</span>). If a variable is not declared and initialized, then it is "undefined."</p>
+            <p class="fragment">Variables only exist when they are <span style="color:yellow">'declared'</span>, when we use the <span class="aqua">var</span> keyword and the name of the variable. e.g. <span style="color: aqua;">var z;</span></p>
+            <p class="fragment">A <span class="yellow">variable declaration</span> is a simple statement, so it ends with a semi-colon (<code class="aqua">;</code>).</p>
+            <p class="fragment">Assigning an initial value to a variable is called <span style="color:yellow">initializing</span>. e.g. <span style="color: aqua;">z = 0;</span> You can declare AND initialize in one go (e.g. <span style="color: aqua;">var z = 0;</span>), or seperately (e.g. <span style="color: aqua;">var z; z = 0;</span>). If a variable is not declared and initialized, then it is <code class="aqua">undefined</code>.</p>
         </section>
 
-     <section>
+        <section>
             <h2>Important Note!</h2>
             <p class="fragment">Variable names cannot have spaces if they have multiple words in them. If they do have multiple word, you should use <span style="color:yellow">camel case</span>.</p>
             <p class="fragment">Camel case means that if you have two words, the first word does not have a capital letter but the subsequent words do).</p>
             <ul>
                 <li class="fragment">Example: myNumber</li>
-                <li class="fragment">Example: thisIsMyCoolVariableName</li>
+                <li class="fragment lightgreen">Example: thisIsMyCoolVariableName</li>
                 <li class="fragment">Example: favoriteFood</li>
             </ul>
         </section>
@@ -335,7 +344,7 @@ x = 1;
                 <li>Begin with letters, $ or _ </li>
                 <li>Only contain letters, numbers, $ and _ </li>
                 <li>Case sensitive</li>
-                <li>Always have a space after 'var'</li>
+                <li>Always have a space after <code class="aqua">var</code></li>
                 <li>Avoid <a href="https://developer.mozilla.org/en/JavaScript/Reference/Reserved_Words" target="_blank">reserved words</a></li>
                 <li>Choose clarity and meaning</li>
             </ul>
@@ -353,15 +362,27 @@ var 2coolForSchool, soHappy!
         <section>
             <h2>Other ways to declare variables</h2>
             <ul>
-                <li class="fragment"><span style="color: turquoise;">let </span>when declaring 'local' variables - more on that later!</li>
-                <li class="fragment"><span style="color: turquoise;">const </span>to declare a variable whose value will be constant; it cannot change. Const prevents the variable from being redeclared or reassigned.</li>
-                <li class="fragment">The syntax is the exact same as when you declare a variable using <span style="color: turquoise;">var</span></li>
+                <!-- <li class="fragment"><span style="color: turquoise;">let </span>when declaring 'local' variables - more on that later!</li> -->
+                <li class="fragment"><code class="aqua">const</code> to declare a variable whose value will be constant; it cannot change. <code class="aqua">const</code> prevents the variable from being redeclared or reassigned.</li>
+                <li class="fragment">The syntax is the exact same as when you declare a variable using <code class="aqua">var</code>.</li>
             </ul>
-<pre class="fragment"><code class="js" data-trim contenteditable>             
+<!-- <pre class="fragment"><code class="js" data-trim contenteditable>             
 const annieCannonsCTO = "Laura";
 let teachingAssistants = "Unicoders Graduates";
 var instructors = "New Beginnings Graduates";
+</code></pre> -->
+<pre class="fragment"><code class="js" data-trim contenteditable>             
+const annieCannonsCEO = "Laura";
+var teachingTeam = "New Beginnings, Unicoders, WeMac Graduates";
 </code></pre>
+        </section>
+
+        <section>
+            <h2>const</h2>
+            <p class="fragment">Useful if you’re setting a variable that you do not plan on changing.</p>
+            <p class="fragment">Protects and prevents your variables from reassignment.</p> 
+            <p class="fragment">In compiled languages, there is an increase in runtime efficiency of your code and thus an overall performance boost vs. using plain 'ol <code class="aqua">var</code>.</p>
+            <p class="fragment">Let's try it in <a href="https://jsbin.com/?js,console" target="_blank">JS Bin</a>!</p>
         </section>
 
         <section>
@@ -378,35 +399,46 @@ alert(message);
             <h2>Where does my JavaScript go?</h2>
             <h3>External JavaScript</h3>
             <p>When working with a browser (not a server), it looks for the <span style="color: yellow;">index.html</span> file to find links to CSS and JS files.</p>
-            <p>Use the <code style="color: aqua;">script</code> tag and the src property to link to your JS file. This tag goes in your HTML document in the head or body: </p>
+            <p>Use the <code class="aqua">script</code> tag and the <code class="aqua">src</code> attribute to link to your JS file. This tag goes in your HTML document in the head or body: </p>
 <pre><code class="html">              
 &lt;script src="scripts.js"&gt;&lt;/script&gt;
 </pre></code>
         </section>
+
         <section>
             <h2>Where does my JavaScript go?</h2>
             <h3>Internal JavaScript</h3>
-            <p>You can also insert JavaScript directly into a web page inside <code>script</code> tags in the head section of your HTML:</p>
-<pre><code class="html"> 
-&lt;script&gt;
+            <p>You can also insert JavaScript directly into a web page inside <code class="aqua">script</code> tags in the head section of your HTML:</p>
+<pre><code class="html">&lt;script&gt;
 alert("Hello there.");
 &lt;/script&gt;
 </pre></code>
             <p class="fragment">You can also add it right before the closing body tag. Any idea why?</p>
+            <aside class="notes">We want info for the page and styling to load first since JS can take some time to load on the site. Loading priority is content, styling, and finally functionality.</aside>
+        </section>
+
+        <section>
+            <h2>Unit Overview</h2>
+            <ul>
+                <li class="green">Introduction to JavaScript</li>
+                <li class="green">Statements and the Console</li>
+                <li class="green">Variables</li>
+                <li>Data Types</li>
+                <li>Introduction to ES6</li>
+            </ul>
         </section>
 
         <section>
             <h2>Data Types in JS</h2>
-            <p>Variables can be populated with any one of the 'data types' available in Javascript.</p>
+            <p>Variables can be populated with any one of the <span class="yellow">data types</span> available in JavaScript.</p>
             <ul>
                 <li>strings</li>
-                <li>numbers</li>
+                <li class="lightgreen">numbers</li>
                 <li>booleans</li>
-                <li>arrays</li>
+                <li class="lightgreen">arrays</li>
                 <li>objects</li>
             </ul>
-            <p>There are also data types that cater for situations where there is no value: undefined and null. Loose typing- you don't tell JS what type of data type it is, it guesses. You can use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof" target="_blank">typeof</a> to see what it thinks.
-            </p>                                                       
+            <!-- Comment out so we can talk more about this in Advanced JS: <p>There are also data types that cater for situations where there is no value: undefined and null. Loose typing- you don't tell JS what type of data type it is, it guesses. You can use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof" target="_blank">typeof</a> to see what it thinks.</p>                                                        -->
         </section>
 
         <section>
@@ -432,18 +464,18 @@ var name = "Laura";
 
          <section>
             <h2>Expressions</h2>
-            <p>Variables can also store the result of any "expression":</p>
+            <p>Variables can also store the result of any "<span class="yellow">expression</span>":</p>
 <pre><code class="js" data-trim contenteditable> 
 var name = 'Gaga';
 var title = 'Lady';
-var greeting = 'Hello ';
+var greeting = 'Hello';
 var formalGreeting = greeting + ', ' + title + ' ' + name;
 </code></pre>
         </section>
 
         <section>
             <h2>A new command</h2>
-            <p class="fragment">If you want to ask your user a question in a pop up window, you can use the prompt command. It is similar to alert.</p>
+            <p class="fragment">If you want to ask your user a question in a pop up window, you can use the <code class="aqua">prompt</code> command. It is similar to alert.</p>
             <p class="fragment">You use prompt and then generally follow that with a string.</p>
 <pre class="fragment"><code class="js" data-trim contenteditable> 
 prompt("What is your favorite food?");
@@ -460,45 +492,45 @@ console.log(name);
 </code></pre>
         </section>
 
-        <section>
+        <!-- We do not use document.write() in the dev shop. So no need to cover this. <section>
             <h2>Another new command</h2>
             <p class="fragment">document.write();</p>
             <p class="fragment">This adds text directly to your browser (NOT the console).</p>
             <p class="fragment">So, if you want to ask someone their name and then add it to your website, you can!</p>
-        </section>
+        </section> -->
 
         <section>
-            <h2>Combining Strings</h2>
+            <h2>String Concatenation</h2>
             <p>After we prompt our user to enter their name, we want to:</p>
             <ul>
                 <li>greet them by their name</li>
-                <li>post a customized welcome message on our site (e.g., when they are logged in)</li>
+                <li class="lightgreen">post a customized welcome message on our site (e.g., when they are logged in)</li>
                 <li>address them personally in an email</li>
             </ul>
             <p>How would we add more text to their name?</p>
-            <p class="fragment">We must add the string using the + sign. Notice the spaces.</p>
+            <p class="fragment">We must add the string using the <code class="aqua">+</code> sign. Notice the spaces.</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>            
 var name = prompt("What is your name?");
-document.write("Hello " + name);
+console.log("Hello " + name);
 </code></pre>
-            <p class="fragment">Combining strings is <span style="color:yellow">Concatenation</span>. In JS, you combine strings with a + operator: 'one string ' + ' another string'</p>
+            <p class="fragment">Combining strings is <span style="color:yellow">Concatenation</span>. In JS, you combine strings with a <code class="aqua">+</code> operator: <span class="aqua">'one string ' + ' another string'</span></p>
         </section>
 
-        <section>
+        <!-- <section>
             <h2>Concatenation</h2>
             <p class="fragment">We use concatenation to personalize websites and emails.</p>
             <p class="fragment">Let’s look at the following email:</p>
             <img data-enlargable width="600" style="border: 5px solid blue; cursor: zoom-in;" class="fragment" src="images/concatenated-personalized-email-example.png" alt="Persnalized email example">
-        </section>
+        </section> -->
 
         <section>
             <h2>Make a Madlib</h2>
-            <p class="fragment">A madlib is a word game where one player prompts others for a list of words to substitute for blanks in a story, before reading the story aloud.</p>
+            <p class="fragment">A <span class="orange">madlib</span> is a word game where one player prompts others for a list of words to substitute for blanks in a story, before reading the story aloud.</p>
             <p class="fragment">Let’s create a madlib game for our users with the following sentence:</p>
-            <p class="fragment">“There once was a [adjective] programmer who wanted to use JavaScript to [verb] with the [noun]."</p>
+            <p class="fragment aqua">“There once was a [adjective] programmer who wanted to use JavaScript to [verb] with the [noun]."</p>
             <div class="fragment">
                 <img src="images/exercise.gif" alt="Exercise Gif" style="width: 150px; height: 150px;" >
-                <a href="https://trello.com/b/RQrD5Ye2/template-student-journey-phase-24-javascript" target="_blank"><img src="images/trello-logo-blue.png" alt="Trello Logo" width="200px"></a> 
+                <a href="https://trello.com/b/RQrD5Ye2" target="_blank"><img src="images/trello-logo-blue.png" alt="Trello Logo" width="200px"></a> 
             </div>  
         </section>
 
@@ -507,25 +539,25 @@ document.write("Hello " + name);
             <p class="fragment">When we get information from a user from a prompt or a web form, JavaScript stores the data as a string not a number.</p>
             <p class="fragment">Try it out:</p> 
 <pre class="fragment"><code class="js" data-trim contenteditable>            
-var peanut = prompt("How many peanut butter sandwiches do you have?")
-var ham = prompt("How many ham sandwiches do you have?")
-var totalSandwich = peanut + ham;
+var sunbutter = prompt("How many sunbutter sandwiches do you have?");
+var ham = prompt("How many ham sandwiches do you have?");
+var totalSandwich = sunbutter + ham;
 console.log(totalSandwich);
 </code></pre>
             <p class="fragment">What amount do you get?</p>
         </section>
 
         <section>
-            <h2>new command</h2>
-            <p>parseInt(); command allows you to pull the numbers you want out of the strings </p>
+            <h2>String to Number Data Types</h2>
+            <p><code class="aqua">Number()</code> command allows you to convert number strings into numbers.</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>           
-var peanut = prompt("How many peanut butter sandwiches do you have?")
-var ham = prompt("How many ham sandwiches do you have?")
-var totalSandwich = peanut + ham;
+var sunbutter = prompt("How many sunbutter sandwiches do you have?");
+var ham = prompt("How many ham sandwiches do you have?");
+var totalSandwich = sunbutter + ham;
 </code></pre>
     <p class="fragment">How could we use this to get the right number of sandwiches? You need to change to:</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>           
-var totalSandwich = parseInt(peanut) + parseInt(ham);
+var totalSandwich = Number(sunbutter) + Number(ham);
 console.log(totalSandwich);
 </code></pre>
         </section>
@@ -542,15 +574,15 @@ console.log(totalSandwich);
         <section>
             <h2>Data Type 2: Number</h2>
             <p class="fragment">Numbers do not have quotation marks around them.</p>
-            <p class="fragment">A number can be an <span style="color:yellow;">integer </span>(also called a whole number), such as 1, 2, -10 </p>
-            <p class="fragment">Or a decimal number (also known as a <span style="color:yellow;">floating point</span>),<br>such as 5.4324 </p>
-            <p class="fragment">Numbers CANNOT by letters or symbols, including commas. </p>
+            <p class="fragment">A number can be an <span style="color:yellow;">integer </span>(also called a whole number), such as 1, 2, -10</p>
+            <p class="fragment">Or a decimal number (also known as a <span style="color:yellow;">floating point</span>),<br> such as 5.4324</p>
+            <p class="fragment">Numbers CANNOT by letters or symbols, including commas.</p>
             <p class="fragment">Try it!</p>
-                <ol class="fragment">
-                    <li>Create a variable called number.</li>
-                    <li>Assign your own number.</li>
-                    <li>Then log it to the console.</li>
-                </ol>
+            <ol class="fragment">
+                <li>Create a variable called <code class="aqua">number</code>.</li>
+                <li class="lightgreen">Assign your own number.</li>
+                <li>Then log it to the console.</li>
+            </ol>
         </section>
 
         <section>
@@ -564,7 +596,7 @@ console.log(number);
 
         <section>
             <h2>More on numbers: Operators</h2>
-            <p>Mathematical operators in JS can be applied to numbers. Example: To add two numbers, use the addition operator (+).</p>
+            <p><span class="yellow">Mathematical operators</span> in JS can be applied to numbers. Example: To add two numbers, use the addition operator (+).</p>
             <ul>
                 <li class="fragment"><span style="color: turquoise">+ </span>  is the addition operator</li>
                 <li class="fragment"> <span style="color: turquoise">- </span>  is the subtraction operator</li>
@@ -575,7 +607,11 @@ console.log(number);
 
         <section>
             <h2>More on numbers: Operators</h2>
-            <p>Game example: Say you create a game that starts a user off with 200 points. Then, the user gets 100 points for crashing an alien spaceship. You could write the following code to keep track.</p>
+            <ul>Game example:
+                <li>Say a game starts a user off with 200 points.</li>
+                <li>Then, the user gets 100 points for crashing an alien spaceship.</li>
+                <li>You could write the following code to keep track:</li>
+            </ul>
 <pre class="fragment"><code class="js" data-trim contenteditable> 
 var score = 200;
 score = score + 100;
@@ -586,11 +622,11 @@ score = score + 100;
             <h2>More on numbers: Operators</h2>
             <p>Most coders use mathematical shorthand for their code. Although you can use the four operators we learned, it is helpful to see others' code.</p>
             <p class="fragment">To add something to a variable you can write:</p>
-            <p class="fragment"> the variable += the numerical value you are adding</p>
+            <p class="fragment">the variable <code class="aqua">+=</code> the numerical value you are adding</p>
 <pre class="fragment"><code class="js" data-trim contenteditable> 
 score += 100;
 </code></pre>
-            <p class="fragment">This will add 100 to the variable named ‘score’ and is easier that always writing score = score + 100;.</p>
+            <p class="fragment">This will add 100 to the variable named ‘<code class="aqua">score</code>’ and is easier Thank always writing <code class="aqua">score = score + 100;</code>.</p>
         </section>
 
         <section>
@@ -610,23 +646,24 @@ var weeksPerYear =
             </ol>
             <div class="fragment">
                 <img src="images/exercise.gif" alt="Exercise Gif" style="width: 150px; height: 150px;">
-                <a href="https://trello.com/b/RQrD5Ye2/template-student-journey-phase-24-javascript" target="_blank"><img src="images/trello-logo-blue.png" alt="Trello Logo" width= "200px"></a>
+                <a href="https://trello.com/b/RQrD5Ye2" target="_blank"><img src="images/trello-logo-blue.png" alt="Trello Logo" width= "200px"></a>
              </div>
         </section>
 
         <section>
             <h2>Order of Operations Review</h2>
             <ul>
-                <li><b>P</b>arenthesis</li>
-                <li><b>E</b>xponents</li>
-                <li><b>M</b>ultiplication</li>
-                <li><b>D</b>ivision</li>
-                <li><b>A</b>ddition</li>
-                <li><b>S</b>ubtraction</li>
+                <li><b class="orange">P</b>arenthesis</li>
+                <li><b class="orange">E</b>xponents</li>
+                <li><b class="orange">M</b>ultiplication</li>
+                <li><b class="orange">D</b>ivision</li>
+                <li><b class="orange">A</b>ddition</li>
+                <li><b class="orange">S</b>ubtraction</li>
             </ul>
 <pre class="fragment"><code class="js" data-trim contenteditable> 
 var answer = 4 * (6-2)
 </code></pre>
+            <p class="fragment">What happens when you log the result?<br><span class="fragment yellow">JS did the PEMDAS for you!</span></p>
         </section>
 
         <section>
@@ -648,25 +685,26 @@ var profit = salesTotal - (wholesalePrice * quantity);
             <!-- <p class="fragment">Ever wonder how much a "decade's supply" of your favorite snack is? Wonder no more!</p> -->
             <ul>
                 <li class="fragment">Store your current age into a variable.</li>
-                <li class="fragment">Store a maximum age into a variable (10 years older than you are now).</li>
+                <li class="fragment lightgreen">Store a maximum age into a variable (10 years older than you are now).</li>
                 <li class="fragment">Store an estimated amount per day (as a number).</li>
-                <li class="fragment">Calculate how many you would eat total for the next decade.</li>
-                <li class="fragment">Output the result to the screen like so: "You will need NN to last you until the ripe old age of X".</li>
+                <li class="fragment lightgreen">Calculate how many you would eat total for the next decade.</li>
+                <li class="fragment">Output the result to the screen like so: <span class="aqua">"You will need NN to last you until the ripe old age of X"</span>.</li>
             </ul>
             <div class="fragment">
                 <img src="images/exercise.gif" alt="Exercise Gif" style="width: 150px; height: 150px;">
-                <a href="https://trello.com/b/RQrD5Ye2/template-student-journey-phase-24-javascript" target="_blank"><img src="images/trello-logo-blue.png" alt="Trello Logo" width= "200px"></a>
+                <a href="https://trello.com/b/RQrD5Ye2" target="_blank"><img src="images/trello-logo-blue.png" alt="Trello Logo" width= "200px"></a>
             </div>    
         </section>
 
         <section>
             <h2>Data Type 3: Boolean</h2>
             <ul>
-                <li class="fragment"> It is a weird word for a rather simple concept!</li>
-                <li class="fragment">This is a data type that can be either <span style="color:yellow">true</span> or <span style="color:yellow">false</span>. There can be only two values. </li>
-                <li class="fragment">We use true or false to represent anything that has two opposites or two possible states. Think of a light switch (on or off).</li>
-                <li class="fragment">In <a href="https://jsbin.com/?js,console" target="_blank">JS Bin</a>, create a variable called “boole” (named after the man who started using this concept) and assign it a value of true or false (no quotes needed), and then console.log "boole".</li>
+                <li class="fragment">A Boolean is a weird word for a rather simple concept!</li>
+                <li class="fragment">This is a data type that can be either <code class="aqua">true</code> or <code class="aqua">false</code>. There can be only two values. </li>
+                <li class="fragment">We use <code class="aqua">true</code> or <code class="aqua">false</code> to represent anything that has two opposites or two possible states. Think of a light switch (on or off).</li>
+                <li class="fragment">In <a href="https://jsbin.com/?js,console" target="_blank">JS Bin</a>, create a variable called <code class="aqua">boole</code> (named after the man who started using this concept) and assign it a value of <code class="aqua">true</code> or <code class="aqua">false</code> (no quotes needed), and then <code class="aqua">console.log()</code> the variable.</li>
             </ul>
+            <aside class="notes">The code for this practice exercise is on the next slide.</aside>
         </section>
 
         <section>
@@ -684,7 +722,7 @@ console.log(boole);
             <p class="fragment">For example, you can create a list of:</p>
             <ul class="fragment">
                 <li>all 50 states</li>
-                <li>your shopping list</li>
+                <li class="lightgreen">your shopping list</li>
                 <li>the personal care items you use</li>
             </ul>
             <p class="fragment">Any data type can go into an array (e.g., numbers, strings, booleans, or a combination of all of these)</p>
@@ -694,11 +732,11 @@ console.log(boole);
         <section>
             <h2>Data Type 4: Arrays</h2>
             <p class="fragment">Syntax: <code style="color:turquoise">var numbers = [1, 2, 3, 4, 5]</code> </p>
-            <p class="fragment">For arrays, you will need to use the square braces [ ] and put a comma between each item. If the array is a list of strings, remember to use quotes!</p>
+            <p class="fragment">For arrays, you will need to use the square braces <code class="aqua">[ ]</code> and put a comma between each item inside the braces. If the array is a list of strings, remember to use quotes! Example:<br><span class="aqua">var states = ["California", "Texas", "New York"];</span></p>
             <p class="fragment">You should make three different arrays in your <a href="https://jsbin.com/?js,console" target="_blank">JS Bin</a> that look something like this:</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>
-var arr = ["laura", "cool", "awesome"];
-var nums = [47,15,14];
+var arr = ["laura", "cool", "awesome"]; //arr is often short for array
+var nums = [47,15,14]; //nums is often short for numbers
 var favoriteFoods = ["pizza", "ice cream", "burgers"];
 </code></pre> 
         </section>
@@ -708,23 +746,36 @@ var favoriteFoods = ["pizza", "ice cream", "burgers"];
             <p class="fragment">The great thing about arrays is that we can reference specific items in an array using their <span style="color:yellow">number indices</span>.
             <p class= "fragment">Each item in an array is invisibly assigned a number.
             </p>
-            <p class="fragment">JS uses <span style="color:yellow">zero indexing </span>to assign the numbers, which means that the first item is indexed as a 0 and each subsequent item's index increases by one.</p>
+            <p class="fragment">JS uses <span style="color:yellow">zero indexing </span>to assign the numbers, which means that the first item is indexed as a <code class="aqua">0</code> and each subsequent item's <span class="yellow">index</span> increases by one.</p>
         </section>
 
         <section>
             <h2>Number Indices</h2>
-            <p>In this array, </p>
 <pre><code class="js" data-trim contenteditable>  
-var array = [“hi”, “bye”, “cool”];
+var array = ["hi", "bye", "cool"];
 </code></pre> 
-            <p class="fragment">hi=0, bye=1, cool=2 </p>
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <td>hi</td>
+                    <td>bye</td>
+                    <td>cool</td>
+                </tr>
+                <tr>
+                    <th>Index</th>
+                    <td style="text-align:center">0</td>
+                    <td style="text-align:center">1</td>
+                    <td style="text-align:center">2</td>
+                </tr>
+            </table>
+            <!-- <p class="fragment">hi=0, bye=1, cool=2 </p> -->
             <p class="fragment">Once you know the number assigned to each item, you can write code that is specific to each.</p>
             <p class="fragment">Example: To log the third item in the array in the console:</p>
 <pre class="fragment"><code class="js" data-trim contenteditable>            
 console.log(array[2]);
 </code></pre> 
-            <p class="fragment">The console will log the third item in the array: “cool”.</p>
-            <p class="fragment">If I wrote console.log(array); the console would print all three items in the array.</p>
+            <p class="fragment">The console will log the third item in the array: <span class="aqua">"cool"</span>.</p>
+            <p class="fragment">If I wrote <span class="aqua">console.log(array);</span> the console would print all three items in the array. <span class="aqua">["hi", "bye", "cool"]</span></p>
         </section>
 
         <section>
@@ -753,7 +804,7 @@ classes.length;
         <section>
             <h2>Error Checking in JS Bin</h2>
             <p class="fragment">Use the JavaScript console and/or <a href="https://jsbin.com/?js,console" target="_blank">JS Bin</a> to debug!</p>
-            <p class="fragment">Take the time to read error messages carefully; they will make more and more sense the more your practice:)</p>
+            <p class="fragment">Take the time to read error messages carefully; they will make more and more sense the more your practice. :)</p>
             <p class="fragment">Most programs do not run perfectly the first time. Learning how to debug is essential.</p>
         </section>
 
@@ -778,10 +829,10 @@ classes.length;
         <section>
             <h2>Data Type 5: Objects</h2>
             <ul>
-                <li class="fragment">Objects are lists of key-value pairs.</li>
+                <li class="fragment"><span class="yellow">Objects</span> are lists of <span class="yellow">key-value pairs</span>.</li>
                 <li class="fragment">You use objects when you want to have a lot of information about one particular topic or subject.</li>
-                <li class="fragment">You use curly braces {} to contain everything in the object, and you write the information vertically (a key-value pair for each line of code) as opposed to an array, in which you write horizontally (on one line of code).</li>
-                <li class="fragment">Pay close attention to syntax! (curly braces, colons, and commas)</li>
+                <li class="fragment">You use curly braces <code class="aqua">{}</code> to contain everything in the object, and you write the information vertically (<span class="orange">a key-value pair for each line of code</span>) as opposed to an array, in which you write horizontally (on one line of code).</li>
+                <li class="fragment">Pay close attention to syntax! (curly braces <code class="aqua">{}</code>, colons <code class="aqua">:</code>, and commas <code class="aqua">,</code>)</li>
             </ul> 
       </section>
 
@@ -790,18 +841,18 @@ classes.length;
           <p>Example of an object</p>
 <pre><code class="js" data-trim contenteditable>   
 var myMeals = {
-    breakfast: "eggs",
-    lunch: "burger",
-    dinner: "spaghetti"
+  breakfast: "eggs",
+  lunch: "burger",
+  dinner: "spaghetti"
 };
 </code></pre>
         <p>You can store things like details about a person.</p>
 <pre><code class="js" data-trim contenteditable>   
 var profileObj = {
-    name: "Laura",
-    city: "San Francisco",
-    favoriteNumber: 47,
-    favoriteFoods: ["chinese", "italian", "cajun"]
+  name: "Laura",
+  city: "San Francisco",
+  favoriteNumber: 47,
+  favoriteFoods: ["chinese", "italian", "cajun"]
 };
 </code></pre>
       </section>
@@ -810,6 +861,7 @@ var profileObj = {
           <h2>Data Type 5: Objects</h2>
           <p>In <a href="https://jsbin.com/?js,console" target="_blank">JS Bin</a>, create an object for a car.</p>
           <p>For the key-value pairs, think of things you would want to know about a car.</p>
+          <aside class="notes">An example of a car object is on the next slide.</aside>
       </section>
 
       <section>
@@ -817,10 +869,10 @@ var profileObj = {
           <p>It should look something like this:</p>
 <pre><code class="js" data-trim contenteditable>   
 var car = {
-	color: "black",
-	model: "mustang",
-	year: 1990,
-	features: ["radio", "seat warmers", "power windows"] 
+  color: "black",
+  model: "mustang",
+  year: 1990,
+  features: ["radio", "seat warmers", "power windows"] 
 };
 </code></pre>
       </section>
@@ -829,16 +881,17 @@ var car = {
         <h2>Data Type 5: Objects</h2>
         <ul>
             <li class="fragment">Note that you can put numbers, strings, or arrays in your objects.</li>
-            <li class="fragment">Remember to put any word (anything not a number) in quotes.</li>
-            <li class="fragment">In the car example, the color, model, year, and features are the <span style="color: turquoise">KEYS</span> of the Object, and the black, mustang, and 1990 are <span style="color: turquoise">VALUES</span>.</li>
-            <li class="fragment">Keys are treated like strings but they don’t have to have quotes in JS, BUT values MUST have quotes if they are strings.</li>
+            <li class="fragment lightgreen">Remember to put any word (anything not a number) in quotes.</li>
+            <li class="fragment">In the car example, the <span class="aqua">color</span>, <span class="aqua">model</span>, <span class="aqua">year</span>, and <span class="aqua">features</span> are the <span class="yellow">KEYS</span> of the Object, and the <span class="aqua">"black"</span>, <span class="aqua">"mustang"</span>, and <span class="aqua">1990</span> are <span class="yellow">VALUES</span>.</li>
+            <li class="fragment lightgreen">Keys are treated like strings but don’t have to have quotes in JS</li>
+            <li class="fragment">Values, though, MUST have quotes if they are strings.</li>
         </ul>
       </section>
 
       <section>
           <h2>Object Assignment</h2>
-          <p>We assign a variable as an object with {}. Example:</p>
-          <p>var angelTheCat = {};</p>
+          <p>We assign a variable as an object with <code class="aqua">{}</code>. Example:</p>
+          <p class="aqua">var angelTheCat = {};</p>
           <p>We can assign a key-value pair to the object in a couple ways:</p>
 <pre><code class="js" data-trim contenteditable> 
 //DOT NOTATION
@@ -848,13 +901,14 @@ angelTheCat.furColor = "orange";
 
 //LITERALLY
 var angelTheCat = {
-    furColor : "orange"
+  furColor : "orange"
 };
 </code></pre>
       </section>
 
       <section>
           <h2>Access with Dots</h2>
+          <p>We can use <span class="yellow">dot notation</span> to access or add key-value pairs.</p>
 <pre><code class="js" data-trim contenteditable>           
 var angelTheCat = {};
 						
@@ -872,7 +926,7 @@ furVariable; //??
 
       <section>
           <h2>Brackets</h2>
-          <p>We can use bracket notion to add key-value pairs, aka properties, to objects as well.</p>
+          <p>We can use <span class="yellow">bracket notion</span> to add key-value pairs, aka <span class="yellow">properties</span>, to objects as well.</p>
 <pre><code class="js" data-trim contenteditable>
 //BRACKET NOTATION: STRING AS KEY - Notice the use of quotes.
 angelTheCat["fur color"] = "orange";
@@ -888,11 +942,9 @@ facebookFriends[12323] = angelTheCat;
           <p>We call this a <span style="color: turquoise">collection</span>. Each item in the array is an object.</p>
 <pre><code class="js" data-trim contenteditable>  
 var cuteCats = [
-
-    { name: "Angel", age: 18, furColor: "grey" },
-    { name: "Evil", age: 14, furColor: "red" },
-    { name: "Meh", age: 12, "Fur Color": "white" }
-
+  { name: "Angel", age: 18, furColor: "grey" },
+  { name: "Evil", age: 14, furColor: "red" },
+  { name: "Meh", age: 12, "Fur Color": "white" }
 ];
 </code></pre>
 <pre><code class="js" data-trim contenteditable> 
@@ -908,10 +960,10 @@ cuteCats[2]["Fur Color"] = ;//?
             <h2>Nested Objects</h2>
 <pre><code class="js" data-trim contenteditable> 
 var doll = {
-	size: "large",
-	innerDollOne: { 
-        size: "medium"
-    }
+  size: "large",
+  innerDollOne: { 
+    size: "medium"
+  }
 };
 
 doll.innerDollOne.innerDollTwo = {size: "small"};
@@ -925,13 +977,13 @@ console.log(doll);
             <p>Create an <span style="color: turquoise">object</span> to hold information on your favorite recipe. It should have properties for: </p>
             <ul>
                 <li>Title (a string, name of recipe)</li>
-                <li>Servings (a number)</li> 
+                <li class="lightgreen">Servings (a number)</li> 
                 <li>Ingredients (an array of strings)</li>
-                <li>Console.log the object</li>
+                <li class="lightgreen"><span class="aqua">console.log()</span> the object</li>
             </ul> 
             <div class="fragment">
                 <img src="images/exercise.gif" alt="Exercise Gif" style="width: 150px; height: 150px;">
-                <a href="https://trello.com/b/RQrD5Ye2/template-student-journey-phase-24-javascript" target="_blank"><img src="images/trello-logo-blue.png" alt="Trello Logo" width= "200px"></a>
+                <a href="https://trello.com/b/RQrD5Ye2" target="_blank"><img src="images/trello-logo-blue.png" alt="Trello Logo" width= "200px"></a>
             </div>  
         </section>
 
@@ -949,7 +1001,7 @@ console.log(doll);
 
         <section>
             <h2>Comments in JS</h2>
-            <p>To make a comment in your code, use // </p>
+            <p>A line of code can be commented out with <code class="aqua">//</code> at the start.</p>
             <p>Comments are very important when writing code. Lots of comments make it easier for people to understand the code.</p>
             <p>Your code will also be easier for you to understand when you revisit it after some time has passed.</p>
         </section>
@@ -972,65 +1024,78 @@ console.log(doll);
 
         <section>
             <h2>Question 1</h2>
-            <img src="images/q1.png" alt="">
+            <img src="images/q1.png" alt="Why put JS before closing body tag?">
         </section>
 
         <section>
             <h2>Question 2</h2>
-            <img src="images/q2.png" alt="">
+            <img src="images/q2.png" alt="locations for JS in a project">
         </section>
 
         <section>
             <h2>Question 3</h2>
-            <img src="images/q3.png" alt="">
+            <img src="images/q3.png" alt="open a dialogue box">
         </section>
 
         <section>
             <h2>Question 4</h2>
-            <img src="images/q4.png" alt="">
+            <img src="images/q4.png" alt="executing a program">
         </section>
 
         <section>
             <h2>Review: Primitive Data Types</h2>
             <p>Variables can store different "types" of data, like:</p>
             <ul>
-                <li><b>string:</b> an immutable string of characters:</li>
+                <li><b class="orange">string:</b> an immutable string of characters:</li>
 <pre><code class="js" data-trim contenteditable>
 var greeting = 'Hello World';
 var restaurant = "Chipotle";
 </code></pre>
-                <li><b>number:</b> whole (6, -102) or floating point (5.8737): </li>
+                <li><b class="orange">number:</b> whole (6, -102) or floating point (5.8737): </li>
 <pre><code class="js" data-trim contenteditable>
 var myAge = 28;
 var pi = 3.14;
 </code></pre>
-                <li><b>boolean:</b> Represents logical values true or false:</li>
+                <li><b class="orange">boolean:</b> Represents logical values true or false:</li>
 <pre><code class="js" data-trim contenteditable>
 var catsAreBest = false;
 var dogsRule = true;
 </code></pre>
-                </ul>                                 
+            </ul>   
+            <aside class="notes">If asked about what a primitive data type is in JS: a primitive data type is built into the language; it's fundamental to JS.</aside>
         </section>
 
         <section>
             <h2>Review: Primitive Data Types</h2>
             <ul>
-            <li><b>array:</b> Represents a list.</li>
+                <li><b class="orange">array:</b> Represents a list.</li>
 <pre><code class="js" data-trim contenteditable>
 var arr = ["laura", 47, ["cat","dog"]];
 </code></pre>
-            <li><b>object</b></li>
+                <li><b class="orange">object</b>: Holds a lot of information about one item.</li>
 <pre><code class="js" data-trim contenteditable>
 var goodPickupLines = {};
 </code></pre>
-            <li><b>undefined:</b> Represents a value that hasn't been defined.</li>
+                <li><b>undefined:</b> Represents a value that hasn't been defined.</li>
 <pre><code class="js" data-trim contenteditable>
 var notDefinedYet;
 </code></pre>
-            <li><b>null:</b> Represents an explicitly empty value.</li>
+                <li><b>null:</b> Represents an explicitly empty value.</li>
 <pre><code class="js" data-trim contenteditable>
 var goodPickupLines = null;
 </code></pre>
+            </ul>
+            <aside class="notes">Why use null? It can be used as a placeholder for the value to be reassigned in the future. If something is undefined, the JS engine sees it as an error and stops running. Null, however, will not produce an error. We can use null in React, create a value for state when it does not have a value yet. This practice is helpful for APIs, since we may not know what data type will be returned from the API call.</aside>
+        </section>
+
+        <section>
+            <h2>Unit Overview</h2>
+            <ul>
+                <li class="green">Introduction to JavaScript</li>
+                <li class="green">Statements and the Console</li>
+                <li class="green">Variables</li>
+                <li class="green">Data Types</li>
+                <li>Introduction to ES6</li>
             </ul>
         </section>
 
@@ -1042,7 +1107,7 @@ var goodPickupLines = null;
 
         <section>
             <h2>ECMAScript</h2>
-            <p>ECMAScript was created to standardize JavaScript. It is now the language that we are using when we implement our JS code. Each year, new features are released.</p>
+            <p><span class="yellow">ECMAScript</span> was created to standardize JavaScript. It is now the language that we are using when we implement our JS code. Each year, new features are released.</p>
             <ul>
                 <li>6th Edition - ECMAScript 2015</li>
                 <li>7th Edition - ECMAScript 2016</li>
@@ -1057,27 +1122,30 @@ var goodPickupLines = null;
             <img class="fragment" src="images/es6.png" alt="ES6 Logo">
         </section>
 
-        <section>
+        <!-- <section>
             <h2>More on Variables</h2>
             <p>We learned <code>var</code> is the keyword to declare a variable. However, now we have two more!</p>
             <ul>
                 <li><code>let</code></li>
                 <li><code>const</code></li>
             </ul>
+        </section> -->
+
+         <section>
+            <h2>Unit Overview</h2>
+            <ul>
+                <li class="green">Introduction to JavaScript</li>
+                <li class="green">Statements and the Console</li>
+                <li class="green">Variables</li>
+                <li class="green">Data Types</li>
+                <li class="green">Introduction to ES6</li>
+            </ul>
         </section>
 
-        <section>
-            <h2>const</h2>
-            <p class="fragment">Useful if you’re setting a variable that you do not plan on changing.</p>
-            <p class="fragment">Protects and prevents your variables from reassignment.</p> 
-            <p class="fragment">In compiled languages, there is an increase in runtime efficiency of your code and thus an overall performance boost vs. using plain ‘ol <code>var</code>.</p>
-            <p class="fragment">Let's try it in <a href="https://jsbin.com/?js,console" target="_blank">JS Bin</a>!</p>
-        </section>
-
-        <section>
+        <!-- <section>
             <h2>Introduction to JavaScript Roundup</h2>
             <p>Click <a href="https://docs.google.com/document/d/11BBUpJFQSr45QbfnK3Pt9jKFaEwO_zx7_IHw1foL5GA/edit?usp=sharing" target="_blank">here</a> to review.</p>
-        </section>
+        </section> -->
 
         <section style="text-align: left;">
             <h1>THE END</h1>
